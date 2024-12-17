@@ -1,0 +1,4 @@
+node_modules/*
+spec/out/*.js
+build/*dev*
+.DS_Store
