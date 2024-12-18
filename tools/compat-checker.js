@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { glob } from "glob";
-import browserCompatData from "@mdn/browser-compat-data" assert { type: "json" };
+import browserCompatData from "@mdn/browser-compat-data" with { type: "json" };
 
 /**
  * Analyzes the compatibility of a browser extension against
@@ -48,7 +48,7 @@ export class BrowserCompatibilityAnalyzer {
 
     for (const file of this.files) {
       const code = await this.readFile(
-        path.join(this.extensionDirectory, file),
+        path.join(this.extensionDirectory, file)
       );
       if (code) {
         const apiCalls = this.findChromeAPICalls(code);
@@ -59,7 +59,7 @@ export class BrowserCompatibilityAnalyzer {
     Object.keys(violations).map((violationKey) => {
       const violation = violations[violationKey];
       console.log(
-        `[${violation.browser}]: ${violation.api} requires version ${violation.required_version} or later.`,
+        `[${violation.browser}]: ${violation.api} requires version ${violation.required_version} or later.`
       );
 
       let notes = "";
@@ -73,7 +73,7 @@ export class BrowserCompatibilityAnalyzer {
       if (notes) {
         console.log("Notes:", notes);
       }
-      console.debug("Support info:", violation.support_info)
+      console.debug("Support info:", violation.support_info);
 
       console.log(`Found in ${violation.occurrences.length} places:`);
       const occurences =
@@ -136,14 +136,18 @@ export class BrowserCompatibilityAnalyzer {
           if (!supportInfos) continue;
           let latestVersion, latestSupportInfo;
           if (Array.isArray(supportInfos)) {
-            latestVersion = Math.max(...supportInfos.map((s) => s.version_added));
-            latestSupportInfo = supportInfos.find((s) => s.version_added === "" + latestVersion);
+            latestVersion = Math.max(
+              ...supportInfos.map((s) => s.version_added)
+            );
+            latestSupportInfo = supportInfos.find(
+              (s) => s.version_added === "" + latestVersion
+            );
           } else {
             latestVersion = supportInfos.version_added;
             latestSupportInfo = supportInfos;
           }
           let versionAdded = latestSupportInfo.version_added;
-          
+
           if (versionAdded === true) continue;
           versionAdded = parseInt(versionAdded, 10);
           if (isNaN(versionAdded)) continue;

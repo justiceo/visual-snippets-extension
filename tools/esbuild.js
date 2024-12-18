@@ -5,7 +5,7 @@ import esbuild from "esbuild";
 import Jasmine from "jasmine";
 import puppeteer from "puppeteer";
 import { parse } from "./parse.js";
-import manifest from "../src/manifest.json" assert { type: "json" };
+import manifest from "../src/manifest.json" with { type: "json" };
 import { Translator } from "./translator.js";
 import { ImageResizer } from "./image-resizer.js";
 import { ManifestValidator } from "./manifest-validator.js";
