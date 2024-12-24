@@ -1,86 +1,6 @@
 import fs from "fs";
 import path from "path";
-
-// chrome permissions list from https://developer.chrome.com/docs/extensions/reference/permissions-list
-const VALID_PERMISSIONS = [
-  "accessibilityFeatures.modify",
-  "accessibilityFeatures.read",
-  "activeTab",
-  "alarms",
-  "audio",
-  "background",
-  "bookmarks",
-  "browsingData",
-  "certificateProvider",
-  "clipboardRead",
-  "clipboardWrite",
-  "contentSettings",
-  "contextMenus",
-  "cookies",
-  "debugger",
-  "declarativeContent",
-  "declarativeNetRequest",
-  "declarativeNetRequestWithHostAccess",
-  "declarativeNetRequestFeedback",
-  "dns",
-  "desktopCapture",
-  "documentScan",
-  "downloads",
-  "downloads.open",
-  "downloads.ui",
-  "enterprise.deviceAttributes",
-  "enterprise.hardwarePlatform",
-  "enterprise.networkingAttributes",
-  "enterprise.platformKeys",
-  "favicon",
-  "fileBrowserHandler",
-  "fileSystemProvider",
-  "fontSettings",
-  "gcm",
-  "geolocation",
-  "history",
-  "identity",
-  "identity.email",
-  "idle",
-  "loginState",
-  "management",
-  "nativeMessaging",
-  "notifications",
-  "offscreen",
-  "pageCapture",
-  "platformKeys",
-  "power",
-  "printerProvider",
-  "printing",
-  "printingMetrics",
-  "privacy",
-  "processes",
-  "proxy",
-  "readingList",
-  "runtime",
-  "scripting",
-  "search",
-  "sessions",
-  "sidePanel",
-  "storage",
-  "system.cpu",
-  "system.display",
-  "system.memory",
-  "system.storage",
-  "tabCapture",
-  "tabGroups",
-  "tabs",
-  "topSites",
-  "tts",
-  "ttsEngine",
-  "unlimitedStorage",
-  "vpnProvider",
-  "wallpaper",
-  "webAuthenticationProxy",
-  "webNavigation",
-  "webRequest",
-  "webRequestBlocking",
-];
+import { validatePermissions } from "./permission-checker.js";
 
 export class ManifestValidator {
   constructor(basePath) {
@@ -103,11 +23,10 @@ export class ManifestValidator {
     try {
       const allPaths = [
         ...(this.manifest.icons ? Object.values(this.manifest.icons) : []),
-        ...(this.manifest.content_scripts.js
-          ? [this.manifest.content_scripts.js]
-          : []),
-        ...(this.manifest.content_scripts.css
-          ? [this.manifest.content_scripts.css]
+        ...(this.manifest.content_scripts
+          ? this.manifest.content_scripts
+              .map((cs) => [cs.js, cs.css].flat())
+              .flat()
           : []),
         ...(this.manifest.action
           ? Object.values(this.manifest.action.default_icon)
@@ -133,6 +52,7 @@ export class ManifestValidator {
           throw new Error(`File not found: ${file}`);
         }
       });
+      this.manifestPaths = allPaths;
       return { message: "File paths validation", status: "PASS" };
     } catch (error) {
       return { message: "File paths validation", status: "FAIL", error: error };
@@ -176,25 +96,6 @@ export class ManifestValidator {
     } catch (error) {
       return {
         message: "Version format validation",
-        status: "FAIL",
-        error: error,
-      };
-    }
-  }
-
-  validatePermissions() {
-    try {
-      if (this.manifest.permissions) {
-        this.manifest.permissions.forEach((permission) => {
-          if (!VALID_PERMISSIONS.includes(permission)) {
-            throw new Error(`Invalid permission: ${permission}`);
-          }
-        });
-      }
-      return { message: "Permissions validation", status: "PASS" };
-    } catch (error) {
-      return {
-        message: "Permissions validation",
         status: "FAIL",
         error: error,
       };
@@ -281,7 +182,13 @@ export class ManifestValidator {
       this.validateFilePaths(),
       this.validateLocales(),
       this.validateVersion(),
-      this.validatePermissions(),
+      validatePermissions(
+        this.basePath,
+        // TODO: Include non-manifest paths linked from HTML files like popup.js from popup.html
+        this.manifestPaths.filter((f) => f.endsWith(".js")),
+        this.manifest.permissions,
+        this.manifest.optional_permissions ?? []
+      ),
       this.validateIcons(),
       this.validateShortName(),
     ];
