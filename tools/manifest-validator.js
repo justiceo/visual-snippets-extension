@@ -205,7 +205,10 @@ export class ManifestValidator {
     );
     if (hasFailedValidation) {
       throw new Error(
-        "Manifest validation failed: " + hasFailedValidation.message
+        "Manifest validation failed: " +
+          hasFailedValidation.message +
+          ": " +
+          hasFailedValidation.error.message
       );
     }
   }
