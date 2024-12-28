@@ -78,8 +78,16 @@ class Build {
         new ChromeExtensionDownloader().download(args.url, args.dest);
         break;
       case "compat":
-        new BrowserCompatibilityAnalyzer(args.src ?? this.outDir).analyze();
+        new BrowserCompatibilityAnalyzer(
+          args.src ?? this.outDir,
+          this.browser
+        ).analyze();
         break;
+      case "validate":
+        new ManifestValidator(
+          this.srcDir ?? this.outDir,
+          this.browser
+        ).runAllValidations();
       case "publish":
         new StorePublisher().publishItemPublic("random_id");
         break;
@@ -281,7 +289,10 @@ class Build {
     }
 
     try {
-      new ManifestValidator(this.outDir).runAllValidations();
+      await new ManifestValidator(
+        this.outDir,
+        this.browser
+      ).runAllValidations();
     } catch (e) {
       console.error(
         "Aborting packaging due to validation errors: \n",

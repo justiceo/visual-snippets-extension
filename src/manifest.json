@@ -35,6 +35,8 @@
     "48": "assets/logo-48x48.png",
     "128": "assets/logo-128x128.png"
   },
+  "__chrome__minimum_chrome_version": "102",
+  "__firefox__minimum_firefox_version": "50",
   "side_panel": {
     "default_path": "side-panel/side-panel.html"
   },

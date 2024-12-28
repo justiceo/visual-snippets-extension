@@ -1,10 +1,13 @@
 import fs from "fs";
 import path from "path";
+import { glob } from "glob";
 import { validatePermissions } from "./permission-checker.js";
+import { BrowserCompatibilityAnalyzer } from "./compat-checker.js";
 
 export class ManifestValidator {
-  constructor(basePath) {
+  constructor(basePath, browser) {
     this.basePath = basePath;
+    this.browser = browser;
     this.manifestPath = path.join(basePath, "manifest.json");
     this.manifest = {};
   }
@@ -52,7 +55,6 @@ export class ManifestValidator {
           throw new Error(`File not found: ${file}`);
         }
       });
-      this.manifestPaths = allPaths;
       return { message: "File paths validation", status: "PASS" };
     } catch (error) {
       return { message: "File paths validation", status: "FAIL", error: error };
@@ -96,6 +98,29 @@ export class ManifestValidator {
     } catch (error) {
       return {
         message: "Version format validation",
+        status: "FAIL",
+        error: error,
+      };
+    }
+  }
+
+  async validateMinimumBrowserVersion() {
+    try {
+      if (!this.manifest[`minimum_${this.browser}_version`]) {
+        throw new Error(
+          `minimum_${this.browser}_version is not set in the manifest.json file.`
+        );
+      }
+
+      await new BrowserCompatibilityAnalyzer(
+        this.basePath,
+        this.browser
+      ).analyze();
+
+      return { message: "Browser compat", status: "PASS" };
+    } catch (error) {
+      return {
+        message: "Browser compat",
         status: "FAIL",
         error: error,
       };
@@ -176,16 +201,17 @@ export class ManifestValidator {
     return localeData[localeKey].message;
   }
 
-  runAllValidations() {
+  async runAllValidations() {
+    const jsFiles = glob.sync("**/*.+(js|ts)", { cwd: this.basePath });
     const results = [
       this.loadManifest(),
       this.validateFilePaths(),
       this.validateLocales(),
       this.validateVersion(),
+      await this.validateMinimumBrowserVersion(),
       validatePermissions(
         this.basePath,
-        // TODO: Include non-manifest paths linked from HTML files like popup.js from popup.html
-        this.manifestPaths.filter((f) => f.endsWith(".js")),
+        jsFiles,
         this.manifest.permissions,
         this.manifest.optional_permissions ?? []
       ),
@@ -208,7 +234,7 @@ export class ManifestValidator {
         "Manifest validation failed: " +
           hasFailedValidation.message +
           ": " +
-          hasFailedValidation.error.message
+          hasFailedValidation.error
       );
     }
   }
