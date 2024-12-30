@@ -72,7 +72,7 @@
     "src/_locales": "_locales",
     "src/popup/popup.html": "popup/popup.html",
     "src/options-page/options.html": "options-page/options.html",
-    "src/welcome": "welcome",
+    "src/welcome/welcome.html": "welcome/welcome.html",
     "src/standalone": "standalone",
     "src/side-panel/side-panel.html": "side-panel/side-panel.html"
   }
