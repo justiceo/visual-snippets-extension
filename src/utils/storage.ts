@@ -8,7 +8,7 @@ class Storage {
   storageService: chrome.storage.SyncStorageArea | Window["localStorage"];
   constructor() {
     // Works like chrome.storage.local if syncing is disabled. Max holding of 100Kb.
-    this.storageService = chrome?.storage?.sync ?? window.localStorage;
+    this.storageService = chrome?.storage?.local ?? window.localStorage;
   }
 
   // Puts arbitrary value in map for key, overwriting any existing value.

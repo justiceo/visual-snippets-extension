@@ -9,8 +9,9 @@
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
-  "permissions": ["contextMenus", "storage", "cookies", "tabs"],
-  "host_permissions": ["*://*/*"],
+  "permissions": ["contextMenus", "storage", "cookies", "tabs", "downloads"],
+  "optional_permissions": ["unlimitedStorage"],
+  "host_permissions": ["<all_urls>"],
   "action": {
     "default_icon": {
       "16": "assets/logo-16x16.png",

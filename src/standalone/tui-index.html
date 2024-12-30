@@ -29,14 +29,16 @@
   <script>
     // Image editor
     var imageEditor = new tui.ImageEditor('#tui-image-editor-container', {
+      // ref https://nhn.github.io/tui.image-editor/latest/ImageEditor
       includeUI: {
         loadImage: {
           path: 'img/sampleImage2.png',
           name: 'SampleImage',
         },
         theme: whiteTheme, // or whiteTheme
-        initMenu: 'filter',
-        menuBarPosition: 'top',
+        menu: ['crop', 'draw', 'shape', 'text'], // 'flip', 'rotate', 'icon', 'mask', 'filter'
+        initMenu: 'shape',
+        menuBarPosition: 'left',
       },
       cssMaxWidth: 700,
       cssMaxHeight: 500,
