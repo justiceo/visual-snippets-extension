@@ -42,24 +42,25 @@ function addCopyToClipboardButton() {
 
   // append to the parent of saveButton.
   saveButton.parentNode.appendChild(copyButton);
-  saveButton.style.marginRight = "10px";
+  copyButton.style.marginLeft = "10px";
 }
 
 // Clipboard only supports PNG format.
-async function copyBase64ImageToClipboard(base64Data, mimeType) {
+async function copyBase64ImageToClipboard(base64Data) {
   // Create a Blob from the base64 data
-  const byteCharacters = atob(base64Data.split(",")[1]); // Remove the "data:image/png;base64," part
-  const byteNumbers = new Array(byteCharacters.length).map((_, i) =>
-    byteCharacters.charCodeAt(i)
-  );
-  const byteArray = new Uint8Array(byteNumbers);
-  const blob = new Blob([byteArray], { type: "image/png" });
+  const base64Content = base64Data.split(",")[1]; // Remove the "data:image/png;base64," part
+  const byteCharacters = atob(base64Content);
 
-  // Convert the Blob into a ClipboardItem
+  // Create byte array directly
+  const byteArray = new Uint8Array(byteCharacters.length);
+  for (let i = 0; i < byteCharacters.length; i++) {
+    byteArray[i] = byteCharacters.charCodeAt(i);
+  }
+
+  const blob = new Blob([byteArray], { type: "image/png" });
   const clipboardItem = new ClipboardItem({ "image/png": blob });
 
   try {
-    // Write the ClipboardItem to the clipboard
     await navigator.clipboard.write([clipboardItem]);
     console.log("Image copied to clipboard!");
   } catch (err) {
@@ -89,6 +90,7 @@ function saveImage(imageObj) {
   });
 }
 
+let filerobotImageEditor;
 function setupEditor(imgData) {
   const { TABS, TOOLS } = window.FilerobotImageEditor;
   const config = {
@@ -163,7 +165,7 @@ function setupEditor(imgData) {
   };
 
   // Assuming we have a div with id="editor_container"
-  const filerobotImageEditor = new window.FilerobotImageEditor(
+  filerobotImageEditor = new window.FilerobotImageEditor(
     document.querySelector("#editor_container"),
     config
   );
