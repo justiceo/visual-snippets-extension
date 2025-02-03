@@ -9,7 +9,14 @@
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
-  "permissions": ["contextMenus", "storage", "cookies", "tabs", "downloads"],
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "cookies",
+    "tabs",
+    "downloads",
+    "activeTab"
+  ],
   "optional_permissions": ["unlimitedStorage"],
   "host_permissions": ["<all_urls>"],
   "action": {

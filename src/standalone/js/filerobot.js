@@ -2,13 +2,12 @@
 // or load from CDN as following and use (window.FilerobotImageEditor):
 // <script src="https://scaleflex.cloudimg.io/v7/plugins/filerobot-image-editor/latest/filerobot-image-editor.min.js"></script>
 
-/* Critical todos
- * Standalone UI editor <DONE>
- * Load image from buffer or storage <DONE>
- * Annnotate Image <DONE>
- * Copy image to clipboard <DONE> (right click to copy)
- * Save image to file-system ~Documents/Screenshot&Share <DONE>
- */
+/*
+why not import from NPM?
+- That package on npm is outdated
+- Need to switch to TS to take advantage of type system.
+- Didn't work when I tried it - got some errors.
+*/
 
 function addCopyToClipboardButton() {
   const saveButton = document.querySelector("button.FIE_topbar-save-button");
@@ -93,20 +92,21 @@ function saveImage(imageObj) {
 function setupEditor(imgData) {
   const { TABS, TOOLS } = window.FilerobotImageEditor;
   const config = {
-    source: imgData, // "img/sampleimage.jpg",
+    source: imgData,
     resetOnImageSourceChange: true,
+    showCanvasOnly: false,
     // Use translate API to update the default keys https://github.com/scaleflex/filerobot-image-editor/blob/master/packages/react-filerobot-image-editor/src/context/defaultTranslations.js#L1
     useBackendTranslations: false,
     onSave: (editedImageObject, designState) => {
       saveImage(editedImageObject);
     },
     defaultSavedImageName:
-      "screenshot_" + new Date().toISOString().split("T")[0],
+      "Screenshot-" + new Date().toISOString().split("T")[0],
     showBackButton: false,
     annotationsCommon: {
       fill: "#ff0000",
     },
-    Text: { text: "Filerobot..." },
+    Text: { text: "Double-click here to type..." },
     Rotate: { angle: 90, componentType: "slider" },
     translations: {
       profile: "Profile",
@@ -181,19 +181,27 @@ const getFileKey = () => {
   const url = new URL(currentUrl);
   return url.searchParams.get("key");
 };
-console.log("getFileKey", getFileKey());
 
 const fileKey = getFileKey();
-// Fetch image from chrome.storage.local using fileKey
-chrome.storage.local.get(fileKey, (result) => {
-  console.log("Fetched image", result);
-  if (result[fileKey]) {
-    const imgData = result[fileKey];
-    console.log("image data", imgData);
-    setupEditor(imgData);
-  }
-});
+console.debug("getFileKey", fileKey);
+if (fileKey) {
+  // Fetch image from chrome.storage.local using fileKey
+  chrome.storage.local.get(fileKey, (result) => {
+    console.log("Fetched image", result);
+    if (result[fileKey]) {
+      const imgData = result[fileKey];
+      console.log("image data", imgData);
+      setupEditor(imgData);
+    } else {
+      console.error("Image not found in storage");
+      setupEditor("img/no-image.jpg");
+    }
+  });
 
-setTimeout(() => {
-  addCopyToClipboardButton();
-}, 500);
+  setTimeout(() => {
+    addCopyToClipboardButton();
+  }, 500);
+} else {
+  console.error("File key not found in URL");
+  setupEditor("img/no-image.jpg");
+}
