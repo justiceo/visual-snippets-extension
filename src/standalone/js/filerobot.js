@@ -197,11 +197,11 @@ if (fileKey) {
       setupEditor("img/no-image.jpg");
     }
   });
-
-  setTimeout(() => {
-    addCopyToClipboardButton();
-  }, 500);
 } else {
   console.error("File key not found in URL");
   setupEditor("img/no-image.jpg");
 }
+
+setTimeout(() => {
+  addCopyToClipboardButton();
+}, 500);
