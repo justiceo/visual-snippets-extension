@@ -1,8 +1,8 @@
 {
-  "name": "xtension",
+  "name": "screenshot",
   "version": "1.0.0",
-  "description": "Browser extension example. Typescript, E2E tests, icon generation, automatic i18n and ESBuild",
-  "homepage": "https://essentialkit.org/xtension/",
+  "description": "Capture and annotate screenshots of webpages with one click",
+  "homepage": "https://xtensions.net/screenshot",
   "scripts": {
     "build": "node tools/esbuild.js --task=build",
     "test": "node tools/esbuild.js --task=test",

@@ -3,9 +3,9 @@
   "description": "__MSG_@appDesc__",
   "short_name": "__MSG_@appShortName__",
   "__comment:homepage_url": "This should be the webstore link, __MSG_@@extension_id__ is not allowed",
-  "homepage_url": "https://github.com/justiceo/xtension",
+  "homepage_url": "https://xtensions.net/screenshot",
   "__comment:version__": "Firefox does not support leading zeros in versions",
-  "version": "23.1.21",
+  "version": "24.2.3",
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
@@ -15,9 +15,9 @@
     "cookies",
     "tabs",
     "downloads",
-    "activeTab"
+    "activeTab",
+    "unlimitedStorage"
   ],
-  "optional_permissions": ["unlimitedStorage"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_icon": {
@@ -82,6 +82,7 @@
     "src/popup/popup.html": "popup/popup.html",
     "src/options-page/options.html": "options-page/options.html",
     "src/welcome/welcome.html": "welcome/welcome.html",
+    "src/welcome/welcome2.html": "welcome/welcome2.html",
     "src/standalone": "standalone",
     "src/side-panel/side-panel.html": "side-panel/side-panel.html"
   }
