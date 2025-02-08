@@ -1,6 +1,5 @@
 // import FilerobotImageEditor from "filerobot-image-editor"; // Load library from NPM
 // or load from CDN as following and use (window.FilerobotImageEditor):
-// <script src="https://scaleflex.cloudimg.io/v7/plugins/filerobot-image-editor/latest/filerobot-image-editor.min.js"></script>
 
 /*
 why not import from NPM?

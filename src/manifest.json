@@ -83,6 +83,7 @@
     "src/options-page/options.html": "options-page/options.html",
     "src/welcome/welcome.html": "welcome/welcome.html",
     "src/welcome/welcome2.html": "welcome/welcome2.html",
+    "src/welcome/bootstrap.bundle.min.js": "welcome/bootstrap.bundle.min.js",
     "src/standalone": "standalone",
     "src/side-panel/side-panel.html": "side-panel/side-panel.html"
   }
