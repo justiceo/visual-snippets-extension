@@ -44,6 +44,37 @@ function addCopyToClipboardButton() {
   copyButton.style.marginLeft = "10px";
 }
 
+function addLinkToIndexPage() {
+  const saveButton = document.querySelector("button.FIE_topbar-save-button");
+  if (!saveButton) {
+    console.error("Save button not found");
+    return;
+  }
+
+  // Create a new link element
+  const linkToIndex = document.createElement("a");
+  linkToIndex.href = "gallery.html"; // Link to the index page
+  linkToIndex.textContent = "Back to Gallery";
+  linkToIndex.style.marginRight = "10px"; // Add some margin for spacing
+
+  // Insert the link before the save button
+  saveButton.parentNode.insertBefore(linkToIndex, saveButton);
+}
+
+function repurposeCloseButtonToDelete() {
+  const closeButton = document.querySelector("button.FIE_topbar-close-button");
+  if (!closeButton) {
+    console.error("Close button not found");
+    return;
+  }
+
+  closeButton.addEventListener("click", (e) => {
+    deleteImage(fileKey);
+    window.location.href = "gallery.html";
+  });
+  closeButton.innerHTML = "🗑️";
+}
+
 // Clipboard only supports PNG format.
 async function copyBase64ImageToClipboard(base64Data) {
   // Create a Blob from the base64 data
@@ -171,8 +202,7 @@ function setupEditor(imgData) {
 
   filerobotImageEditor.render({
     onClose: (closingReason) => {
-      console.log("Closing reason", closingReason);
-      filerobotImageEditor.terminate();
+      // Close action is handled by delete button.
     },
   });
 }
@@ -190,7 +220,7 @@ if (fileKey) {
   chrome.storage.local.get(fileKey, (result) => {
     console.log("Fetched image", result);
     if (result[fileKey]) {
-      const imgData = result[fileKey];
+      const imgData = result[fileKey].dataUrl;
       console.log("image data", imgData);
       setupEditor(imgData);
     } else {
@@ -204,5 +234,13 @@ if (fileKey) {
 }
 
 setTimeout(() => {
+  repurposeCloseButtonToDelete();
   addCopyToClipboardButton();
+  addLinkToIndexPage(); // Call the function to add the link
 }, 500);
+
+function deleteImage(key) {
+  chrome.storage.local.remove(key, () => {
+    console.log("Deleted image with key", key);
+  });
+}
