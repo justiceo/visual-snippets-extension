@@ -9,6 +9,13 @@ function renderGallery(screenshotKeys) {
   let currentPage = 1;
   const itemsPerPage = 6;
 
+  // Sort screenshotKeys in reverse chronological order
+  screenshotKeys.sort((a, b) => {
+    const aTimestamp = parseInt(a.split("_")[1]);
+    const bTimestamp = parseInt(b.split("_")[1]);
+    return bTimestamp - aTimestamp;
+  });
+
   // Load initial content
   addScreenshots();
 
@@ -171,6 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderGallery(imageKeys);
   });
 });
+
 function getScreenshotKeys() {
   return new Promise((resolve, reject) => {
     chrome.storage.local.get(null, (result) => {
