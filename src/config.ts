@@ -1,7 +1,22 @@
 import { MenuItem, Config } from "./types";
 import { i18n } from "./utils/i18n";
 
-export const contextMenus: MenuItem[] = [];
+export const contextMenus: MenuItem[] = [
+  {
+    menu: {
+      id: "open-gallery",
+      title: "Screenshot Gallery",
+      visible: true,
+      contexts: ["action"],
+    },
+    handler: (unusedInfo) => {
+      chrome.tabs.create({
+        url: chrome.runtime.getURL("standalone/gallery.html"),
+        active: true,
+      });
+    },
+  },
+];
 
 export const configOptions: Config[] = [
   {

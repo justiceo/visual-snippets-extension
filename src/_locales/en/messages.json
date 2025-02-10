@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "@appShortName": {
-    "message": "Visual Snippets",
+    "message": "Screenshot",
     "description": "The short-version name of the extension name"
   },
   "@appDesc": {

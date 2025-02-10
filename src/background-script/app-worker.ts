@@ -22,6 +22,8 @@ chrome.action.onClicked.addListener((tab) => {
       url: tab.url,
       title: tab.title,
     };
+
+    // TODO: Handle storage quota exceeded error (QUOTA_BYTES_PER_ITEM error).
     await storage.put(screenshotKey, screenshotData);
 
     // Open the image editor with the saved screenshot

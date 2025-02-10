@@ -5,7 +5,7 @@
   "__comment:homepage_url": "This should be the webstore link, __MSG_@@extension_id__ is not allowed",
   "homepage_url": "https://xtensions.net/screenshot",
   "__comment:version__": "Firefox does not support leading zeros in versions",
-  "version": "24.2.7",
+  "version": "24.2.9",
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
