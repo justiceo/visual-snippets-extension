@@ -1,6 +1,6 @@
-# ![logo](src/assets/logo-24x24.png) Screenshot Tool
+# ![logo](src/assets/logo-24x24.png) Visual Snippets: Screenshot, Annotate & Share
 
-[![Xtension](https://circleci.com/gh/essentialkit/xtension/tree/main.svg?style=svg)](https://circleci.com/gh/essentialkit/xtension/?branch=main)
+[![Xtension](https://circleci.com/gh/justiceo/visual-snippets-extension/tree/main.svg?style=svg)](https://circleci.com/gh/justiceo/visual-snippets-extension/?branch=main)
 
 ## Project setup
 
