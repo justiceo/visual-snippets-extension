@@ -7,7 +7,7 @@ function renderGallery(screenshotKeys) {
 
   let screenshots = {};
   let currentPage = 1;
-  const itemsPerPage = 9;
+  const itemsPerPage = 6;
 
   // Load initial content
   addScreenshots();
@@ -69,6 +69,7 @@ function renderGallery(screenshotKeys) {
     deleteBtn.onclick = (e) => {
       e.stopPropagation();
       delete screenshots[key];
+      deleteImage(key);
       wrapper.remove();
     };
 
@@ -186,5 +187,10 @@ function getScreenshotData(key) {
     chrome.storage.local.get(key, (result) => {
       resolve(result[key]);
     });
+  });
+}
+function deleteImage(key) {
+  chrome.storage.local.remove(key, () => {
+    console.log("Deleted image with key", key);
   });
 }
