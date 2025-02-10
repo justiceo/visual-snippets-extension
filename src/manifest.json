@@ -73,7 +73,7 @@
     "src/welcome/welcome.ts",
     "src/utils/settings/settings.ts",
     "src/side-panel/side-panel.ts",
-    "src/standalone/js/editor.ts",
+    "src/standalone/js/gallery.js",
     "src/utils/winbox/winbox.js"
   ],
   "__assets": {

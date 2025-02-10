@@ -1,3 +1,5 @@
+import Fuse from "fuse.js";
+
 function renderGallery(screenshotKeys) {
   const container = document.querySelector(".container");
   const searchInput = document.getElementById("search");
@@ -8,6 +10,12 @@ function renderGallery(screenshotKeys) {
   let screenshots = {};
   let currentPage = 1;
   const itemsPerPage = 6;
+
+  // Initialize Fuse.js options
+  const fuseOptions = {
+    keys: ["title", "hr_date", "url"],
+    threshold: 0.3, // Adjust the threshold for fuzziness
+  };
 
   // Sort screenshotKeys in reverse chronological order
   screenshotKeys.sort((a, b) => {
@@ -22,24 +30,41 @@ function renderGallery(screenshotKeys) {
   // Search functionality
   searchInput.addEventListener("input", (e) => {
     const searchTerm = e.target.value.toLowerCase();
-    const images = container.getElementsByTagName("img");
-
-    Array.from(images).forEach((img) => {
-      const title = img.alt.toLowerCase();
-      const isVisible = title.includes(searchTerm);
-      img.style.display = isVisible ? "block" : "none";
-    });
-  });
-
-  function createImageElement(imageData, key) {
-    function formatDate(timestamp) {
-      const date = new Date(timestamp);
-      const month = date.toLocaleString("default", { month: "short" });
-      const day = String(date.getDate()).padStart(2, "0");
-      const year = date.getFullYear();
-      return ` ${month} ${day}`;
+    if (searchTerm === "") {
+      // Reset UI when search query is empty
+      container.innerHTML = "";
+      currentPage = 1;
+      screenshotKeys = Object.keys(screenshots);
+      addScreenshots();
+      loadMoreBtn.style.display = "block";
+      return;
     }
 
+    const fuse = new Fuse(Object.values(screenshots), fuseOptions);
+    const results = fuse.search(searchTerm);
+
+    // Clear current images
+    container.innerHTML = "";
+
+    // Render images based on search results
+    results.forEach(({ item }) => {
+      const imageElement = createImageElement(item, item.key);
+      container.appendChild(imageElement);
+    });
+
+    // Hide load more button if search results are displayed
+    loadMoreBtn.style.display = results.length ? "none" : "block";
+  });
+
+  function formatDate(timestamp) {
+    const date = new Date(timestamp);
+    const month = date.toLocaleString("default", { month: "short" });
+    const day = String(date.getDate()).padStart(2, "0");
+    const year = date.getFullYear();
+    return ` ${month} ${day}`;
+  }
+
+  function createImageElement(imageData, key) {
     function getHostname(url) {
       try {
         return new URL(url).hostname;
@@ -160,6 +185,13 @@ function renderGallery(screenshotKeys) {
     for (let i = 0; i < itemsPerPage && screenshotKeys.length > 0; i++) {
       const screenshotKey = screenshotKeys.shift();
       getScreenshotData(screenshotKey).then((data) => {
+        // Store screenshot data for search
+        screenshots[screenshotKey] = {
+          ...data,
+          key: screenshotKey,
+          hr_date: formatDate(data.createdAt), // Add human-readable date for searching
+        };
+
         const imageElement = createImageElement(data, screenshotKey);
         container.appendChild(imageElement);
       });
