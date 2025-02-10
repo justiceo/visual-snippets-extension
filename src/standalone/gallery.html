@@ -70,14 +70,58 @@
             max-width: 1000px;
         }
 
-        .container img {
-            object-fit: cover;
+        .container .image-wrapper {
+            position: relative;
             margin: 10px;
             height: 300px;
             width: 300px;
             max-width: 100%;
+        }
+
+        .container img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
             border: 1px solid #ccc;
             border-radius: 5px;
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .image-wrapper:hover .image-overlay {
+            opacity: 1;
+        }
+
+        .image-info {
+            font-size: 14px;
+        }
+
+        .delete-btn {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .delete-btn:hover {
+            color: #ff4444;
         }
 
         #load-more {
@@ -113,6 +157,56 @@
                 });
             });
 
+            function createImageElement(imageData, key) {
+                function formatDate(timestamp) {
+                    const date = new Date(timestamp);
+                    const month = date.toLocaleString('default', { month: 'short' });
+                    const day = String(date.getDate()).padStart(2, '0');
+                    const year = date.getFullYear();
+                    return ` ${month} ${day}`;
+                }
+
+                function getHostname(url) {
+                    try {
+                        return new URL(url).hostname;
+                    } catch {
+                        return '';
+                    }
+                }
+
+                const wrapper = document.createElement("div");
+                wrapper.className = "image-wrapper";
+                wrapper.dataset.key = key;
+
+                const image = document.createElement("img");
+                image.src = imageData.dataUrl;
+                image.alt = imageData.title;
+
+                const overlay = document.createElement("div");
+                overlay.className = "image-overlay";
+
+                const info = document.createElement("div");
+                info.className = "image-info";
+                info.textContent = `${getHostname(imageData.url)} • ${formatDate(imageData.createdAt)}`;
+
+                const deleteBtn = document.createElement("button");
+                deleteBtn.className = "delete-btn";
+                deleteBtn.innerHTML = "🗑️";
+                deleteBtn.title = "Delete screenshot";
+                deleteBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    delete screenshots[key];
+                    wrapper.remove();
+                };
+
+                overlay.appendChild(info);
+                overlay.appendChild(deleteBtn);
+                wrapper.appendChild(image);
+                wrapper.appendChild(overlay);
+
+                return wrapper;
+            }
+
             // File upload handling
             function handleFileUpload(file) {
                 if (file && file.type.startsWith("image/")) {
@@ -124,14 +218,12 @@
                         screenshots[screenshotKey] = {
                             dataUrl,
                             createdAt: Date.now(),
-                            hr_date: new Date().toLocaleString(),
+                            url: 'https://example.com', // TODO: Replace with actual URL
                             title: file.name
                         };
 
-                        const image = document.createElement("img");
-                        image.src = dataUrl;
-                        image.alt = file.name;
-                        container.insertBefore(image, container.firstChild);
+                        const imageElement = createImageElement(screenshots[screenshotKey], screenshotKey);
+                        container.insertBefore(imageElement, container.firstChild);
                     };
                     reader.readAsDataURL(file);
                 }
@@ -185,11 +277,18 @@
                 const getRandomNumber = () => Math.floor(Math.random() * 123);
 
                 for (let i = 0; i < itemsPerPage; i++) {
-                    const image = document.createElement("img");
                     const randomNum = getRandomNumber();
-                    image.src = `${randomfoxURL}${randomNum}.jpg`;
-                    image.alt = `Fox Image ${randomNum}`;
-                    container.appendChild(image);
+                    const screenshotKey = `screenshot_${Date.now()}_${i}`;
+
+                    screenshots[screenshotKey] = {
+                        dataUrl: `${randomfoxURL}${randomNum}.jpg`,
+                        createdAt: Date.now() - i * 86400000, // Subtract days for variety
+                        url: 'https://randomfox.ca',
+                        title: `Fox Image ${randomNum}`
+                    };
+
+                    const imageElement = createImageElement(screenshots[screenshotKey], screenshotKey);
+                    container.appendChild(imageElement);
                 }
             }
         });
