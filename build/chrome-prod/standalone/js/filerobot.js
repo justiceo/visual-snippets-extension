@@ -44,6 +44,37 @@ function addCopyToClipboardButton() {
   copyButton.style.marginLeft = "10px";
 }
 
+function addLinkToIndexPage() {
+  const saveButton = document.querySelector("button.FIE_topbar-save-button");
+  if (!saveButton) {
+    console.error("Save button not found");
+    return;
+  }
+
+  // Create a new link element
+  const linkToIndex = document.createElement("a");
+  linkToIndex.href = "gallery.html"; // Link to the index page
+  linkToIndex.textContent = "Back to Gallery";
+  linkToIndex.style.marginRight = "10px"; // Add some margin for spacing
+
+  // Insert the link before the save button
+  saveButton.parentNode.insertBefore(linkToIndex, saveButton);
+}
+
+function repurposeCloseButtonToDelete() {
+  const closeButton = document.querySelector("button.FIE_topbar-close-button");
+  if (!closeButton) {
+    console.error("Close button not found");
+    return;
+  }
+
+  closeButton.addEventListener("click", (e) => {
+    deleteImage(fileKey);
+    window.location.href = "gallery.html";
+  });
+  closeButton.innerHTML = "🗑️";
+}
+
 // Clipboard only supports PNG format.
 async function copyBase64ImageToClipboard(base64Data) {
   // Create a Blob from the base64 data
@@ -105,7 +136,15 @@ function setupEditor(imgData) {
       "Screenshot-" + new Date().toISOString().split("T")[0],
     showBackButton: false,
     annotationsCommon: {
-      fill: "#ff0000",
+      fill: "#00000000", // or should be no color? === undefined
+      stroke: "#FF0000", // or should be no color? === undefined
+      strokeWidth: 2,
+      shadowOffsetX: 0,
+      shadowOffsetY: 0,
+      shadowBlur: 0,
+      shadowColor: "#000000", // or should be no color? === undefined
+      shadowOpacity: 1,
+      opacity: 1,
     },
     Text: { text: "Double-click here to type..." },
     Rotate: { angle: 90, componentType: "slider" },
@@ -118,49 +157,13 @@ function setupEditor(imgData) {
       fbCoverPhotoSize: "820x312px",
     },
     Crop: {
-      presetsItems: [
-        {
-          titleKey: "classicTv",
-          descriptionKey: "4:3",
-          ratio: 4 / 3,
-          // icon: CropClassicTv, // optional, CropClassicTv is a React Function component. Possible (React Function component, string or HTML Element)
-        },
-        {
-          titleKey: "cinemascope",
-          descriptionKey: "21:9",
-          ratio: 21 / 9,
-          // icon: CropCinemaScope, // optional, CropCinemaScope is a React Function component.  Possible (React Function component, string or HTML Element)
-        },
-      ],
-      presetsFolders: [
-        {
-          titleKey: "socialMedia", // will be translated into Social Media as backend contains this translation key
-          // icon: Social, // optional, Social is a React Function component. Possible (React Function component, string or HTML Element)
-          groups: [
-            {
-              titleKey: "facebook",
-              items: [
-                {
-                  titleKey: "profile",
-                  width: 180,
-                  height: 180,
-                  descriptionKey: "fbProfileSize",
-                },
-                {
-                  titleKey: "coverPhoto",
-                  width: 820,
-                  height: 312,
-                  descriptionKey: "fbCoverPhotoSize",
-                },
-              ],
-            },
-          ],
-        },
-      ],
+      ratio: "custom",
+      autoResize: true,
+      noPresets: true,
     },
-    tabsIds: [TABS.ADJUST, TABS.ANNOTATE], // or ['Adjust', 'Annotate', 'Watermark']
-    defaultTabId: TABS.ANNOTATE, // or 'Annotate'
-    defaultToolId: TOOLS.Text, // or 'Text'
+    tabsIds: [TABS.ANNOTATE, TABS.ADJUST, "Filters", "Finetune", "Resize"],
+    defaultTabId: TABS.ANNOTATE,
+    defaultToolId: TOOLS.Crop,
   };
 
   // Assuming we have a div with id="editor_container"
@@ -171,8 +174,7 @@ function setupEditor(imgData) {
 
   filerobotImageEditor.render({
     onClose: (closingReason) => {
-      console.log("Closing reason", closingReason);
-      filerobotImageEditor.terminate();
+      // Close action is handled by delete button.
     },
   });
 }
@@ -190,7 +192,7 @@ if (fileKey) {
   chrome.storage.local.get(fileKey, (result) => {
     console.log("Fetched image", result);
     if (result[fileKey]) {
-      const imgData = result[fileKey];
+      const imgData = result[fileKey].dataUrl;
       console.log("image data", imgData);
       setupEditor(imgData);
     } else {
@@ -204,5 +206,13 @@ if (fileKey) {
 }
 
 setTimeout(() => {
+  repurposeCloseButtonToDelete();
   addCopyToClipboardButton();
+  addLinkToIndexPage(); // Call the function to add the link
 }, 500);
+
+function deleteImage(key) {
+  chrome.storage.local.remove(key, () => {
+    console.log("Deleted image with key", key);
+  });
+}

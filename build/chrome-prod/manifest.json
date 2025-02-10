@@ -3,7 +3,7 @@
     "description": "__MSG_@appDesc__",
     "short_name": "__MSG_@appShortName__",
     "homepage_url": "https://xtensions.net/screenshot",
-    "version": "24.2.7",
+    "version": "24.2.9",
     "manifest_version": 3,
     "default_locale": "en",
     "author": "Justice Ogbonna",
