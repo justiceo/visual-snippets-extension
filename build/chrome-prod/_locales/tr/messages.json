@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Ekran görüntüsü",
+        "message": "Görsel Snippets: Ekran görüntüsü, ek açıklama ve paylaş",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Web sayfalarının ekran görüntülerini tek bir tıklamayla yakalayın ve açıklayın",
+        "message": "Web sayfalarının ekran görüntülerini yakalayın, açıklayın ve tek bir tıklamayla paylaşın",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Nasıl gelişebiliriz?"
-    },
-    "Options": {
-        "message": "Seçenekler"
-    },
-    "Show_Demo": {
-        "message": "Demoyu Göster"
-    },
-    "Report_an_Issue": {
-        "message": "Bir Sorun Bildirin"
     },
     "Welcome": {
         "message": "Hoş geldin"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Chrome web mağazasında oran"
+    },
+    "Options": {
+        "message": "Seçenekler"
+    },
+    "Show_Demo": {
+        "message": "Demoyu Göster"
+    },
+    "Report_an_Issue": {
+        "message": "Bir Sorun Bildirin"
     },
     "How_are_we_doing_": {
         "message": "Nasıl yapıyoruz?"

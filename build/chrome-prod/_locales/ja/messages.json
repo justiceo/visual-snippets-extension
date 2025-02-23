@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "スクリーンショット",
+        "message": "ビジュアルスニペット：スクリーンショット、注釈、共有",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "ワンクリックでウェブページのスクリーンショットをキャプチャして注釈します",
+        "message": "Webページのスクリーンショットをキャプチャし、注釈を付け、ワンクリックで共有する",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "どうすれば改善できますか？"
-    },
-    "Options": {
-        "message": "オプション"
-    },
-    "Show_Demo": {
-        "message": "デモを表示します"
-    },
-    "Report_an_Issue": {
-        "message": "問題を報告します"
     },
     "Welcome": {
         "message": "いらっしゃいませ"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Chrome Webストアのレート"
+    },
+    "Options": {
+        "message": "オプション"
+    },
+    "Show_Demo": {
+        "message": "デモを表示します"
+    },
+    "Report_an_Issue": {
+        "message": "問題を報告します"
     },
     "How_are_we_doing_": {
         "message": "私たちは元気ですか？"

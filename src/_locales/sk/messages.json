@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Screenshot",
+        "message": "Vizuálne úryvky: Screenshot, anotate a zdieľajte",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Zachytiť a anotovať snímky obrazoviek webových stránok jedným kliknutím",
+        "message": "Zachytiť, anotovať snímky obrazoviek webových stránok a zdieľať jedným kliknutím",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Ako sa môžeme vylepšiť?"
-    },
-    "Options": {
-        "message": "Možnosti"
-    },
-    "Show_Demo": {
-        "message": "Ukázať"
-    },
-    "Report_an_Issue": {
-        "message": "Nahlásiť problém"
     },
     "Welcome": {
         "message": "Privítať"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Hodnotiť na internetovom obchode Chrome"
+    },
+    "Options": {
+        "message": "Možnosti"
+    },
+    "Show_Demo": {
+        "message": "Ukázať"
+    },
+    "Report_an_Issue": {
+        "message": "Nahlásiť problém"
     },
     "How_are_we_doing_": {
         "message": "Ako sa nám darí?"

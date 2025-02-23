@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Snimka zaslona",
+        "message": "Vizualni isječci: snimka zaslona, ​​bilježi i dijeli",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Snimite i bilježite snimke zaslona web stranica jednim klikom",
+        "message": "Uhvatite, bilježite snimke zaslona web stranica i podijelite jednim klikom",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Kako se možemo poboljšati?"
-    },
-    "Options": {
-        "message": "Opcije"
-    },
-    "Show_Demo": {
-        "message": "Prikaži demo"
-    },
-    "Report_an_Issue": {
-        "message": "Prijavite problem"
     },
     "Welcome": {
         "message": "Dobrodošli"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Ocijenite na web trgovini Chrome"
+    },
+    "Options": {
+        "message": "Opcije"
+    },
+    "Show_Demo": {
+        "message": "Prikaži demo"
+    },
+    "Report_an_Issue": {
+        "message": "Prijavite problem"
     },
     "How_are_we_doing_": {
         "message": "Kako stojimo?"

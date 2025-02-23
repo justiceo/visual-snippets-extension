@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Tangkapan layar",
+        "message": "Cuplikan visual: tangkapan layar, anotasi & bagikan",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Capture dan anotasi tangkapan layar halaman web dengan satu klik",
+        "message": "Capture, Annotate Screenshot dari halaman web dan bagikan dengan satu klik",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Bagaimana kita bisa meningkatkan?"
-    },
-    "Options": {
-        "message": "Opsi"
-    },
-    "Show_Demo": {
-        "message": "Tampilkan demo"
-    },
-    "Report_an_Issue": {
-        "message": "Melaporkan masalah"
     },
     "Welcome": {
         "message": "Selamat datang"
@@ -98,11 +89,20 @@
     "Rate_on_Chrome_Web_Store": {
         "message": "Nilai di toko web chrome"
     },
+    "Options": {
+        "message": "Opsi"
+    },
+    "Show_Demo": {
+        "message": "Tampilkan demo"
+    },
+    "Report_an_Issue": {
+        "message": "Melaporkan masalah"
+    },
     "How_are_we_doing_": {
         "message": "Bagaimana kabar kita?"
     },
     "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Senang Anda menyukainya! Bisakah Anda membantu kami membagikan ❤️?"
+        "message": "Senang Anda menyukainya! Bisakah Anda membantu kami berbagi ❤️?"
     },
     "Thanks_for_the_feedback_": {
         "message": "Terima kasih atas umpan baliknya!"

@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "स्क्रीनशॉट",
+        "message": "विजुअल स्निपेट्स: स्क्रीनशॉट, एनोटेट और शेयर",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "एक क्लिक के साथ वेबपृष्ठों के स्क्रीनशॉट को कैप्चर और एनोटेट करें",
+        "message": "कैप्चर, वेबपेज के स्क्रीनशॉट को एनोटेट करें और एक क्लिक के साथ साझा करें",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "हम कैसे सुधार सकते हैं?"
-    },
-    "Options": {
-        "message": "विकल्प"
-    },
-    "Show_Demo": {
-        "message": "डेमो दिखाओ"
-    },
-    "Report_an_Issue": {
-        "message": "किसी मुद्दे की रिपोर्ट करें"
     },
     "Welcome": {
         "message": "स्वागत"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "क्रोम वेब स्टोर पर दर"
+    },
+    "Options": {
+        "message": "विकल्प"
+    },
+    "Show_Demo": {
+        "message": "डेमो दिखाओ"
+    },
+    "Report_an_Issue": {
+        "message": "किसी मुद्दे की रिपोर्ट करें"
     },
     "How_are_we_doing_": {
         "message": "हम कैसे हैं?"

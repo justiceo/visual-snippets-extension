@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "സ്ക്രീൻഷോട്ട്",
+        "message": "വിഷ്വൽ സ്നിപ്പെറ്റുകൾ: സ്ക്രീൻഷോട്ട്, വ്യാഖ്യാനം, പങ്കിടുക",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "ഒരു ക്ലിക്കിലൂടെ വെബ്പേജുകളുടെ സ്ക്രീൻഷോട്ടുകൾ ക്യാപ്ചർ ചെയ്യുകയും വ്യാഖ്യാനിക്കുകയും ചെയ്യുക",
+        "message": "ക്യാപ്ചർ ചെയ്യുക, വെബ്പേജുകളുടെ സ്ക്രീൻഷോട്ടുകൾ വ്യാഖ്യാനിക്കുക, ഒറ്റ ക്ലിക്കിലൂടെ പങ്കിടുക",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "നമുക്ക് എങ്ങനെ മെച്ചപ്പെടുത്താൻ കഴിയും?"
-    },
-    "Options": {
-        "message": "ഓപ്ഷനുകൾ"
-    },
-    "Show_Demo": {
-        "message": "ഡെമോ കാണിക്കുക"
-    },
-    "Report_an_Issue": {
-        "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക"
     },
     "Welcome": {
         "message": "സാഗതം"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Chrome വെബ് സ്റ്റോറിലെ നിരക്ക്"
+    },
+    "Options": {
+        "message": "ഓപ്ഷനുകൾ"
+    },
+    "Show_Demo": {
+        "message": "ഡെമോ കാണിക്കുക"
+    },
+    "Report_an_Issue": {
+        "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക"
     },
     "How_are_we_doing_": {
         "message": "ഞങ്ങൾ എങ്ങനെ ചെയ്യുന്നു?"

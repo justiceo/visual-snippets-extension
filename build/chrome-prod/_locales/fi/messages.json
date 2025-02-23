@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Kuvakaappaus",
+        "message": "Visuaaliset katkelmat: kuvakaappaus, merkintä ja jako",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Kaappaa ja merkitse kuvakaappauksia verkkosivuista yhdellä napsautuksella",
+        "message": "Kaappaa, merkitse kuvakaappauksia verkkosivuista ja jaa yhdellä napsautuksella",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Kuinka voimme parantaa?"
-    },
-    "Options": {
-        "message": "Vaihtoehdot"
-    },
-    "Show_Demo": {
-        "message": "Näytä esittely"
-    },
-    "Report_an_Issue": {
-        "message": "Ilmoittaa"
     },
     "Welcome": {
         "message": "Tervetuloa"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Arvio Chrome Web -kaupassa"
+    },
+    "Options": {
+        "message": "Vaihtoehdot"
+    },
+    "Show_Demo": {
+        "message": "Näytä esittely"
+    },
+    "Report_an_Issue": {
+        "message": "Ilmoittaa"
     },
     "How_are_we_doing_": {
         "message": "Kuinka meillä menee?"

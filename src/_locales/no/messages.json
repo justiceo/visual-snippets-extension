@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Skjermbilde",
+        "message": "Visuelle utdrag: Skjermbilde, Annotate & Share",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Fangst og kommentere skjermbilder av websider med ett klikk",
+        "message": "Fangst, kommenter skjermbilder av websider og del med ett klikk",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Hvordan kan vi forbedre oss?"
-    },
-    "Options": {
-        "message": "Alternativer"
-    },
-    "Show_Demo": {
-        "message": "Vis demo"
-    },
-    "Report_an_Issue": {
-        "message": "Rapporter et problem"
     },
     "Welcome": {
         "message": "Velkomst"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Rate på Chrome Web Store"
+    },
+    "Options": {
+        "message": "Alternativer"
+    },
+    "Show_Demo": {
+        "message": "Vis demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapporter et problem"
     },
     "How_are_we_doing_": {
         "message": "Hvordan har vi det?"

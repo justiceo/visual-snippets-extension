@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "ቅጽበታዊ ገጽ እይታ",
+        "message": "የእይታ ጉባዎች-ቅጽበታዊ ገጽ እይታ, ማብራሪያ እና ያጋሩ",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "በአንድ ጠቅታ የድር ጣቢያዎች ቅጽበታዊ ገጽ እይታዎችን ይያዙ እና ያብራሩ",
+        "message": "መያዝ, የድረ-ገጾች ቅጽበታዊ ገጽ እይታዎችን እና ከአንድ ጠቅ ማድረግ ያጋሩ",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "እንዴት ማሻሻል እንችላለን?"
-    },
-    "Options": {
-        "message": "አማራጮች"
-    },
-    "Show_Demo": {
-        "message": "ማሳያ ማሳያ"
-    },
-    "Report_an_Issue": {
-        "message": "አንድ ጉዳይ ሪፖርት ያድርጉ"
     },
     "Welcome": {
         "message": "እንኳን ደህና መጣህ"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "በ Chrome ድር ማከማቻ ላይ ተመን"
+    },
+    "Options": {
+        "message": "አማራጮች"
+    },
+    "Show_Demo": {
+        "message": "ማሳያ ማሳያ"
+    },
+    "Report_an_Issue": {
+        "message": "አንድ ጉዳይ ሪፖርት ያድርጉ"
     },
     "How_are_we_doing_": {
         "message": "እንዴት እየሰራን ነው?"

@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "لقطة شاشة",
+        "message": "المقتطفات المرئية: لقطة شاشة ، شرح ومشاركة",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "التقاط وشرح لقطات شاشة من صفحات الويب بنقرة واحدة",
+        "message": "التقاط وشرح لقطات من صفحات الويب وشاركها بنقرة واحدة",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "كيف يمكننا تحسين؟"
-    },
-    "Options": {
-        "message": "خيارات"
-    },
-    "Show_Demo": {
-        "message": "عرض العرض التوضيحي"
-    },
-    "Report_an_Issue": {
-        "message": "الإبلاغ عن قضية"
     },
     "Welcome": {
         "message": "مرحباً"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "معدل على متجر Chrome على الويب"
+    },
+    "Options": {
+        "message": "خيارات"
+    },
+    "Show_Demo": {
+        "message": "عرض العرض التوضيحي"
+    },
+    "Report_an_Issue": {
+        "message": "الإبلاغ عن قضية"
     },
     "How_are_we_doing_": {
         "message": "كيف حالنا؟"

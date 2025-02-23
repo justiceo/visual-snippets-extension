@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "ತೋಪು",
+        "message": "ವಿಷುಯಲ್ ತುಣುಕುಗಳು: ಸ್ಕ್ರೀನ್‌ಶಾಟ್, ಟಿಪ್ಪಣಿ ಮತ್ತು ಹಂಚಿಕೆ",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "ವೆಬ್‌ಪುಟಗಳ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ಒಂದೇ ಕ್ಲಿಕ್‌ನೊಂದಿಗೆ ಸೆರೆಹಿಡಿಯಿರಿ ಮತ್ತು ಟಿಪ್ಪಣಿ ಮಾಡಿ",
+        "message": "ಸೆರೆಹಿಡಿಯಿರಿ, ವೆಬ್‌ಪುಟಗಳ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ಟಿಪ್ಪಣಿ ಮಾಡಿ ಮತ್ತು ಒಂದೇ ಕ್ಲಿಕ್‌ನೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "ನಾವು ಹೇಗೆ ಸುಧಾರಿಸಬಹುದು?"
-    },
-    "Options": {
-        "message": "ಆಯ್ಕೆಗಳು"
-    },
-    "Show_Demo": {
-        "message": "ಡೆಮೊ ತೋರಿಸಿ"
-    },
-    "Report_an_Issue": {
-        "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ"
     },
     "Welcome": {
         "message": "ಸುಧನ"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "ಕ್ರೋಮ್ ವೆಬ್ ಅಂಗಡಿಯಲ್ಲಿ ದರ"
+    },
+    "Options": {
+        "message": "ಆಯ್ಕೆಗಳು"
+    },
+    "Show_Demo": {
+        "message": "ಡೆಮೊ ತೋರಿಸಿ"
+    },
+    "Report_an_Issue": {
+        "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ"
     },
     "How_are_we_doing_": {
         "message": "ನಾವು ಹೇಗೆ ಮಾಡುತ್ತಿದ್ದೇವೆ?"

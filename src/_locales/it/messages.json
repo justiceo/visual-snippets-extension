@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Screenshot",
+        "message": "Snippet visivi: screenshot, annotate & share",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Acquisisci e annota gli screenshot delle pagine Web con un clic",
+        "message": "Acquisisci, annota gli screenshot delle pagine Web e condividi con un clic",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Come possiamo migliorare?"
-    },
-    "Options": {
-        "message": "Opzioni"
-    },
-    "Show_Demo": {
-        "message": "Mostra demo"
-    },
-    "Report_an_Issue": {
-        "message": "Segnalare un problema"
     },
     "Welcome": {
         "message": "Benvenuta"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Valuta su Chrome Web Store"
+    },
+    "Options": {
+        "message": "Opzioni"
+    },
+    "Show_Demo": {
+        "message": "Mostra demo"
+    },
+    "Report_an_Issue": {
+        "message": "Segnalare un problema"
     },
     "How_are_we_doing_": {
         "message": "Come stiamo andando?"

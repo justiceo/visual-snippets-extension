@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Skärmdump",
+        "message": "Visuella utdrag: Skärmdump, kommenterat och delar",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Fånga och kommentera skärmdumpar av webbsidor med ett klick",
+        "message": "Fånga, kommentera skärmdumpar av webbsidor och dela med ett klick",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Hur kan vi förbättra?"
-    },
-    "Options": {
-        "message": "Alternativ"
-    },
-    "Show_Demo": {
-        "message": "Visa demo"
-    },
-    "Report_an_Issue": {
-        "message": "Rapportera ett problem"
     },
     "Welcome": {
         "message": "Välkomna"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Betyg på Chrome Web Store"
+    },
+    "Options": {
+        "message": "Alternativ"
+    },
+    "Show_Demo": {
+        "message": "Visa demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapportera ett problem"
     },
     "How_are_we_doing_": {
         "message": "Hur mår vi?"

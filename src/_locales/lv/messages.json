@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Ekrānuzņēmums",
+        "message": "Vizuālie fragmenti: ekrānuzņēmums, anotācija un dalīšanās",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Tīmekļa lapu ekrānuzņēmumu uztveršana un anotācija ar vienu klikšķi",
+        "message": "Tveržu uztveršana, tīmekļa lapu ekrānuzņēmumi un koplieto ar vienu klikšķi",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Kā mēs varam uzlabot?"
-    },
-    "Options": {
-        "message": "Iespējas"
-    },
-    "Show_Demo": {
-        "message": "Parādīt demonstrāciju"
-    },
-    "Report_an_Issue": {
-        "message": "Ziņot par jautājumu"
     },
     "Welcome": {
         "message": "Sagaidīt"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Novērtējiet hroma interneta veikalā"
+    },
+    "Options": {
+        "message": "Iespējas"
+    },
+    "Show_Demo": {
+        "message": "Parādīt demonstrāciju"
+    },
+    "Report_an_Issue": {
+        "message": "Ziņot par jautājumu"
     },
     "How_are_we_doing_": {
         "message": "Kā mums klājas?"

@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Екранна снимка",
+        "message": "Визуални фрагменти: екранна снимка, пояснение и споделяне",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Заснемайте и анотирате екранни снимки на уеб страници с едно щракване",
+        "message": "Заснемане, анотиране на екранни снимки на уеб страници и споделете с едно щракване",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Как можем да се подобрим?"
-    },
-    "Options": {
-        "message": "Опции"
-    },
-    "Show_Demo": {
-        "message": "Покажи демонстрация"
-    },
-    "Report_an_Issue": {
-        "message": "Докладвайте проблем"
     },
     "Welcome": {
         "message": "Добре дошли"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Оценете се в уеб магазина на Chrome"
+    },
+    "Options": {
+        "message": "Опции"
+    },
+    "Show_Demo": {
+        "message": "Покажи демонстрация"
+    },
+    "Report_an_Issue": {
+        "message": "Докладвайте проблем"
     },
     "How_are_we_doing_": {
         "message": "Как се справяме?"

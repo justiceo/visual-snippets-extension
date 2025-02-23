@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Képernyőkép",
+        "message": "Vizuális kivonatok: képernyőkép, annotate és megosztás",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Rögzítse és kommentálja a weboldalak képernyőképeit egy kattintással",
+        "message": "Rögzítse, kommentálja a weboldalak képernyőképeit, és ossza meg egy kattintással",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Hogyan javulhatunk?"
-    },
-    "Options": {
-        "message": "Lehetőségek"
-    },
-    "Show_Demo": {
-        "message": "Bemutató bemutató"
-    },
-    "Report_an_Issue": {
-        "message": "Jelentsen egy problémát"
     },
     "Welcome": {
         "message": "Üdvözlet"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Értékeld a Chrome Web Store -on"
+    },
+    "Options": {
+        "message": "Lehetőségek"
+    },
+    "Show_Demo": {
+        "message": "Bemutató bemutató"
+    },
+    "Report_an_Issue": {
+        "message": "Jelentsen egy problémát"
     },
     "How_are_we_doing_": {
         "message": "Hogy állunk?"

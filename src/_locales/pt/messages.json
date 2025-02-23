@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Captura de tela",
+        "message": "Trechos visuais: captura de tela, anotar e compartilhar",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Capture e anote capturas de tela das páginas da web com um clique",
+        "message": "Capture, anote capturas de tela das páginas da web e compartilhe com um clique",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Como podemos melhorar?"
-    },
-    "Options": {
-        "message": "Opções"
-    },
-    "Show_Demo": {
-        "message": "Mostrar demonstração"
-    },
-    "Report_an_Issue": {
-        "message": "Relatar um problema"
     },
     "Welcome": {
         "message": "Bem-vindo"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Taxa na Chrome Web Store"
+    },
+    "Options": {
+        "message": "Opções"
+    },
+    "Show_Demo": {
+        "message": "Mostrar demonstração"
+    },
+    "Report_an_Issue": {
+        "message": "Relatar um problema"
     },
     "How_are_we_doing_": {
         "message": "Como estamos indo?"

@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Picha ya skrini",
+        "message": "Snippets za Visual: Picha ya skrini, Annotate & Shiriki",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Capture na uone skrini za kurasa za wavuti na bonyeza moja",
+        "message": "Capture, Skrini za kurasa za kurasa za wavuti na ushiriki kwa kubonyeza moja",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Tunawezaje kuboresha?"
-    },
-    "Options": {
-        "message": "Chaguzi"
-    },
-    "Show_Demo": {
-        "message": "Onyesha demo"
-    },
-    "Report_an_Issue": {
-        "message": "Ripoti suala"
     },
     "Welcome": {
         "message": "Karibu"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Kiwango kwenye Duka la Wavuti la Chrome"
+    },
+    "Options": {
+        "message": "Chaguzi"
+    },
+    "Show_Demo": {
+        "message": "Onyesha demo"
+    },
+    "Report_an_Issue": {
+        "message": "Ripoti suala"
     },
     "How_are_we_doing_": {
         "message": "Tunaendeleaje?"

@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Заслона",
+        "message": "Визуелни исјечка: Снимка екрана, напомена и подели",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Снимање за снимање и напомена веб страница са једним кликом",
+        "message": "Снимање за снимање, наносите снимке екрана веб страница и поделите једним кликом",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Како се можемо побољшати?"
-    },
-    "Options": {
-        "message": "Опције"
-    },
-    "Show_Demo": {
-        "message": "Показати демо"
-    },
-    "Report_an_Issue": {
-        "message": "Пријавите проблем"
     },
     "Welcome": {
         "message": "Добродошли"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Оцени на Цхроме Веб Сторе"
+    },
+    "Options": {
+        "message": "Опције"
+    },
+    "Show_Demo": {
+        "message": "Показати демо"
+    },
+    "Report_an_Issue": {
+        "message": "Пријавите проблем"
     },
     "How_are_we_doing_": {
         "message": "Како смо?"

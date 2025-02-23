@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "ภาพหน้าจอ",
+        "message": "ภาพตัวอย่างภาพ: ภาพหน้าจอ, คำอธิบายประกอบและแบ่งปัน",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "ภาพหน้าจอจับภาพและคำอธิบายประกอบของหน้าเว็บด้วยคลิกเดียว",
+        "message": "จับภาพหน้าจอคำอธิบายประกอบของหน้าเว็บและแชร์ด้วยคลิกเดียว",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "เราจะปรับปรุงได้อย่างไร?"
-    },
-    "Options": {
-        "message": "ตัวเลือก"
-    },
-    "Show_Demo": {
-        "message": "แสดงตัวอย่าง"
-    },
-    "Report_an_Issue": {
-        "message": "รายงานปัญหา"
     },
     "Welcome": {
         "message": "ยินดีต้อนรับ"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "ให้คะแนนใน Chrome Web Store"
+    },
+    "Options": {
+        "message": "ตัวเลือก"
+    },
+    "Show_Demo": {
+        "message": "แสดงตัวอย่าง"
+    },
+    "Report_an_Issue": {
+        "message": "รายงานปัญหา"
     },
     "How_are_we_doing_": {
         "message": "เราเป็นอย่างไรบ้าง?"

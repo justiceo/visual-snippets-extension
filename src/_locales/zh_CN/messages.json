@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "截屏",
+        "message": "视觉片段：屏幕截图，注释和共享",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "一键捕获和注释网页的屏幕截图",
+        "message": "捕获，注释网页的屏幕截图，然后单击一次分享",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "我们如何改进？"
-    },
-    "Options": {
-        "message": "选项"
-    },
-    "Show_Demo": {
-        "message": "展示演示"
-    },
-    "Report_an_Issue": {
-        "message": "报告一个问题"
     },
     "Welcome": {
         "message": "欢迎"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Chrome网上商店的利率"
+    },
+    "Options": {
+        "message": "选项"
+    },
+    "Show_Demo": {
+        "message": "展示演示"
+    },
+    "Report_an_Issue": {
+        "message": "报告一个问题"
     },
     "How_are_we_doing_": {
         "message": "我们好吗？"

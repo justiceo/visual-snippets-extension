@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "స్క్రీన్ షాట్",
+        "message": "విజువల్ స్నిప్పెట్స్: స్క్రీన్ షాట్, ఉల్లేఖనం & వాటా",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "ఒక క్లిక్‌తో వెబ్‌పేజీల స్క్రీన్‌షాట్‌లను సంగ్రహించండి మరియు ఉల్లేఖించండి",
+        "message": "క్యాప్చర్, వెబ్‌పేజీల స్క్రీన్‌షాట్‌లను ఉల్లేఖించండి మరియు ఒక క్లిక్‌తో భాగస్వామ్యం చేయండి",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "మేము ఎలా మెరుగుపరచగలం?"
-    },
-    "Options": {
-        "message": "ఎంపికలు"
-    },
-    "Show_Demo": {
-        "message": "డెమో షో"
-    },
-    "Report_an_Issue": {
-        "message": "ఒక సమస్యను నివేదించండి"
     },
     "Welcome": {
         "message": "స్వాగతం"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Chrome వెబ్ స్టోర్‌లో రేటు"
+    },
+    "Options": {
+        "message": "ఎంపికలు"
+    },
+    "Show_Demo": {
+        "message": "డెమో షో"
+    },
+    "Report_an_Issue": {
+        "message": "ఒక సమస్యను నివేదించండి"
     },
     "How_are_we_doing_": {
         "message": "మేము ఎలా చేస్తున్నాము?"

@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Скріншот",
+        "message": "Візуальні фрагменти: скріншот, анота та ділиться",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Захоплення та анота скріншоти веб -сторінок одним клацанням",
+        "message": "Захоплення, анотуйте скріншоти веб -сторінок та поділіться одним клацанням",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Як ми можемо вдосконалитись?"
-    },
-    "Options": {
-        "message": "Варіанти"
-    },
-    "Show_Demo": {
-        "message": "Показати демонстрацію"
-    },
-    "Report_an_Issue": {
-        "message": "Повідомте про питання"
     },
     "Welcome": {
         "message": "Вітати"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Швидкість у веб -магазині Chrome"
+    },
+    "Options": {
+        "message": "Варіанти"
+    },
+    "Show_Demo": {
+        "message": "Показати демонстрацію"
+    },
+    "Report_an_Issue": {
+        "message": "Повідомте про питання"
     },
     "How_are_we_doing_": {
         "message": "Як у нас справи?"

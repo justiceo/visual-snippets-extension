@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Captură de ecran",
+        "message": "Fragmente vizuale: captură de ecran, adnotare și partajare",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Capturați și adnotați capturi de ecran ale paginilor web cu un singur clic",
+        "message": "Capturați, adnotați capturi de ecran ale paginilor web și partajați cu un singur clic",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Cum ne putem îmbunătăți?"
-    },
-    "Options": {
-        "message": "Opțiuni"
-    },
-    "Show_Demo": {
-        "message": "Arată demo"
-    },
-    "Report_an_Issue": {
-        "message": "Raportați o problemă"
     },
     "Welcome": {
         "message": "Bun venit"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Evaluați pe magazinul web Chrome"
+    },
+    "Options": {
+        "message": "Opțiuni"
+    },
+    "Show_Demo": {
+        "message": "Arată demo"
+    },
+    "Report_an_Issue": {
+        "message": "Raportați o problemă"
     },
     "How_are_we_doing_": {
         "message": "Ce mai facem?"

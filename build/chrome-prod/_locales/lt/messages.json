@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Ekrano kopija",
+        "message": "Vaizdiniai fragmentai: ekrano kopija, anotato",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Fiksuokite ir komentuokite tinklalapių ekrano kopijas vienu paspaudimu",
+        "message": "Fiksuokite, pažymėkite tinklalapių ekrano kopijas ir pasidalykite vienu paspaudimu",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Kaip mes galime tobulėti?"
-    },
-    "Options": {
-        "message": "Galimybės"
-    },
-    "Show_Demo": {
-        "message": "Parodykite demonstracinę versiją"
-    },
-    "Report_an_Issue": {
-        "message": "Pranešti apie klausimą"
     },
     "Welcome": {
         "message": "Sveiki"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Įvertinimas „Chrome“ internetinėje parduotuvėje"
+    },
+    "Options": {
+        "message": "Galimybės"
+    },
+    "Show_Demo": {
+        "message": "Parodykite demonstracinę versiją"
+    },
+    "Report_an_Issue": {
+        "message": "Pranešti apie klausimą"
     },
     "How_are_we_doing_": {
         "message": "Kaip mums sekasi?"

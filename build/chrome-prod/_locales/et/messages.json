@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Ekraanipilt",
+        "message": "Visuaalsed lõigud: ekraanipilt, annoteerimine ja jagamine",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Veebilehtede ekraanipiltide jäädvustamine ja märkused ühe klõpsuga",
+        "message": "Jäädvustamine, veebilehtede ekraanipildid ja jagage ühe klõpsuga",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Kuidas saaksime parandada?"
-    },
-    "Options": {
-        "message": "Valikud"
-    },
-    "Show_Demo": {
-        "message": "Näita demo"
-    },
-    "Report_an_Issue": {
-        "message": "Emissioonist teatama"
     },
     "Welcome": {
         "message": "Tervitus"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Kiirus Chrome'i veebipoes"
+    },
+    "Options": {
+        "message": "Valikud"
+    },
+    "Show_Demo": {
+        "message": "Näita demo"
+    },
+    "Report_an_Issue": {
+        "message": "Emissioonist teatama"
     },
     "How_are_we_doing_": {
         "message": "Kuidas meil läheb?"

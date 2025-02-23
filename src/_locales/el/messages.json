@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Στιγμιότυπο οθόνης",
+        "message": "Οπτικά αποσπάσματα: στιγμιότυπο οθόνης, σχολιασμός και κοινή χρήση",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Σχεδίαση και σχολιασμό οθόνης ιστοσελίδων με ένα κλικ",
+        "message": "Σχεδίαση, σχολιασμός στιγμιότυπων στιγμιότυπων ιστοσελίδων και μοιραστείτε με ένα κλικ",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Πώς μπορούμε να βελτιώσουμε;"
-    },
-    "Options": {
-        "message": "Επιλογές"
-    },
-    "Show_Demo": {
-        "message": "Επίδειξη επίδειξης"
-    },
-    "Report_an_Issue": {
-        "message": "Αναφέρετε ένα ζήτημα"
     },
     "Welcome": {
         "message": "Καλωσόρισμα"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Βαθμολογία στο κατάστημα Web Chrome"
+    },
+    "Options": {
+        "message": "Επιλογές"
+    },
+    "Show_Demo": {
+        "message": "Επίδειξη επίδειξης"
+    },
+    "Report_an_Issue": {
+        "message": "Αναφέρετε ένα ζήτημα"
     },
     "How_are_we_doing_": {
         "message": "Πώς κάνουμε;"

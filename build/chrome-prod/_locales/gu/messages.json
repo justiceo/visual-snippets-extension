@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "સ્ક્રીનશોટ",
+        "message": "વિઝ્યુઅલ સ્નિપેટ્સ: સ્ક્રીનશોટ, ot નોટેટ અને શેર",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "એક ક્લિકથી વેબપૃષ્ઠોના સ્ક્રીનશોટ કેપ્ચર અને ot નોટેટ કરો",
+        "message": "કેપ્ચર કરો, વેબપૃષ્ઠોના સ્ક્રીનશોટનો ot નોટેટ કરો અને એક ક્લિક સાથે શેર કરો",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "આપણે કેવી રીતે સુધારી શકીએ?"
-    },
-    "Options": {
-        "message": "વિકલ્પ"
-    },
-    "Show_Demo": {
-        "message": "ડેમો બતાવો"
-    },
-    "Report_an_Issue": {
-        "message": "એક મુદ્દો જાણ કરો"
     },
     "Welcome": {
         "message": "આવકાર્ય"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "ક્રોમ વેબ સ્ટોર પર દર"
+    },
+    "Options": {
+        "message": "વિકલ્પ"
+    },
+    "Show_Demo": {
+        "message": "ડેમો બતાવો"
+    },
+    "Report_an_Issue": {
+        "message": "એક મુદ્દો જાણ કરો"
     },
     "How_are_we_doing_": {
         "message": "આપણે કેવી રીતે કરી રહ્યા છીએ?"

@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "ஸ்கிரீன் ஷாட்",
+        "message": "காட்சி துணுக்குகள்: ஸ்கிரீன்ஷாட், சிறுகுறிப்பு மற்றும் பகிர்வு",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "ஒரே கிளிக்கில் வலைப்பக்கங்களின் ஸ்கிரீன் ஷாட்களைப் பிடித்து சிறுகுறிப்பு செய்யுங்கள்",
+        "message": "வலைப்பக்கங்களின் ஸ்கிரீன் ஷாட்களைப் பிடிக்கவும், சிறுகுறிப்பு செய்யவும், ஒரே கிளிக்கில் பகிரவும்",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "நாம் எவ்வாறு மேம்படுத்த முடியும்?"
-    },
-    "Options": {
-        "message": "விருப்பங்கள்"
-    },
-    "Show_Demo": {
-        "message": "டெமோவைக் காட்டு"
-    },
-    "Report_an_Issue": {
-        "message": "ஒரு சிக்கலைப் புகாரளிக்கவும்"
     },
     "Welcome": {
         "message": "வரவேற்கிறோம்"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Chrome வலை கடையில் விகிதம்"
+    },
+    "Options": {
+        "message": "விருப்பங்கள்"
+    },
+    "Show_Demo": {
+        "message": "டெமோவைக் காட்டு"
+    },
+    "Report_an_Issue": {
+        "message": "ஒரு சிக்கலைப் புகாரளிக்கவும்"
     },
     "How_are_we_doing_": {
         "message": "நாங்கள் எப்படி இருக்கிறோம்?"

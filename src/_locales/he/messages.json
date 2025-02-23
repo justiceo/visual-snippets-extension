@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "צילום מסך",
+        "message": "קטעים חזותיים: צילום מסך, הערות ושיתוף",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "צילום והערות על צילומי מסך של דפי אינטרנט בלחיצה אחת",
+        "message": "לכידת, הערת צילומי מסך של דפי אינטרנט ושיתפו בלחיצה אחת",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "איך נוכל להשתפר?"
-    },
-    "Options": {
-        "message": "אפשרויות"
-    },
-    "Show_Demo": {
-        "message": "להראות הדגמה"
-    },
-    "Report_an_Issue": {
-        "message": "דווח על בעיה"
     },
     "Welcome": {
         "message": "קַבָּלַת פָּנִים"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "דרג בחנות האינטרנט של Chrome"
+    },
+    "Options": {
+        "message": "אפשרויות"
+    },
+    "Show_Demo": {
+        "message": "להראות הדגמה"
+    },
+    "Report_an_Issue": {
+        "message": "דווח על בעיה"
     },
     "How_are_we_doing_": {
         "message": "מה שלומך?"

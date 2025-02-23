@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "स्क्रीनशॉट",
+        "message": "व्हिज्युअल स्निपेट्स: स्क्रीनशॉट, भाष्य आणि सामायिक करा",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "एका क्लिकसह वेबपृष्ठांचे स्क्रीनशॉट कॅप्चर आणि भाष्य करा",
+        "message": "कॅप्चर करा, वेबपृष्ठांचे स्क्रीनशॉट्स भाष्य करा आणि एका क्लिकसह सामायिक करा",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "आपण कसे सुधारू शकतो?"
-    },
-    "Options": {
-        "message": "पर्याय"
-    },
-    "Show_Demo": {
-        "message": "डेमो दर्शवा"
-    },
-    "Report_an_Issue": {
-        "message": "एखाद्या समस्येचा अहवाल द्या"
     },
     "Welcome": {
         "message": "आपले स्वागत आहे"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Chrome वेब स्टोअर वर रेट"
+    },
+    "Options": {
+        "message": "पर्याय"
+    },
+    "Show_Demo": {
+        "message": "डेमो दर्शवा"
+    },
+    "Report_an_Issue": {
+        "message": "एखाद्या समस्येचा अहवाल द्या"
     },
     "How_are_we_doing_": {
         "message": "आम्ही कसे करीत आहोत?"

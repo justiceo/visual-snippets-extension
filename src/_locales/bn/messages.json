@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "স্ক্রিনশট",
+        "message": "ভিজ্যুয়াল স্নিপেটস: স্ক্রিনশট, টীকা এবং ভাগ করুন",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "এক ক্লিকের সাথে ওয়েবপৃষ্ঠাগুলির স্ক্রিনশটগুলি ক্যাপচার করুন এবং টীকা দিন",
+        "message": "ক্যাপচার করুন, ওয়েবপৃষ্ঠাগুলির স্ক্রিনশটগুলি টীকা দিন এবং একটি ক্লিকের সাথে ভাগ করুন",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "আমরা কীভাবে উন্নতি করতে পারি?"
-    },
-    "Options": {
-        "message": "বিকল্প"
-    },
-    "Show_Demo": {
-        "message": "ডেমো দেখান"
-    },
-    "Report_an_Issue": {
-        "message": "একটি ইস্যু রিপোর্ট"
     },
     "Welcome": {
         "message": "স্বাগতম"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "ক্রোম ওয়েব স্টোরে রেট"
+    },
+    "Options": {
+        "message": "বিকল্প"
+    },
+    "Show_Demo": {
+        "message": "ডেমো দেখান"
+    },
+    "Report_an_Issue": {
+        "message": "একটি ইস্যু রিপোর্ট"
     },
     "How_are_we_doing_": {
         "message": "আমরা কেমন করছি?"

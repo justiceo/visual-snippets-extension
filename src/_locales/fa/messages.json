@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "عکس",
+        "message": "قطعه های بصری: تصویر ، حاشیه نویسی و اشتراک گذاری",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "تصاویر صفحه های وب را با یک کلیک ضبط و حاشیه نویسی کنید",
+        "message": "ضبط ، حاشیه نویسی از صفحات وب و به اشتراک گذاشتن با یک کلیک",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "چگونه می توانیم پیشرفت کنیم؟"
-    },
-    "Options": {
-        "message": "گزینه"
-    },
-    "Show_Demo": {
-        "message": "نمایش نسخه ی نمایشی"
-    },
-    "Report_an_Issue": {
-        "message": "گزارش یک موضوع"
     },
     "Welcome": {
         "message": "خوشامد"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "در فروشگاه وب Chrome امتیاز دهید"
+    },
+    "Options": {
+        "message": "گزینه"
+    },
+    "Show_Demo": {
+        "message": "نمایش نسخه ی نمایشی"
+    },
+    "Report_an_Issue": {
+        "message": "گزارش یک موضوع"
     },
     "How_are_we_doing_": {
         "message": "حال ما چطور است؟"

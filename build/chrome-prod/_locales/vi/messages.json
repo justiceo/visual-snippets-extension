@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Ảnh chụp màn hình",
+        "message": "Đoạn trích trực quan: Ảnh chụp màn hình, Annotate & Share",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Chụp và chú thích ảnh chụp màn hình của các trang web bằng một cú nhấp chuột",
+        "message": "Chụp, chụp ảnh chụp màn hình của trang web và chia sẻ chỉ bằng một cú nhấp chuột",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Làm thế nào chúng ta có thể cải thiện?"
-    },
-    "Options": {
-        "message": "Tùy chọn"
-    },
-    "Show_Demo": {
-        "message": "Hiển thị bản demo"
-    },
-    "Report_an_Issue": {
-        "message": "Báo cáo một vấn đề"
     },
     "Welcome": {
         "message": "Chào mừng"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Đánh giá trên cửa hàng trang web Chrome"
+    },
+    "Options": {
+        "message": "Tùy chọn"
+    },
+    "Show_Demo": {
+        "message": "Hiển thị bản demo"
+    },
+    "Report_an_Issue": {
+        "message": "Báo cáo một vấn đề"
     },
     "How_are_we_doing_": {
         "message": "Chúng ta đang làm thế nào?"

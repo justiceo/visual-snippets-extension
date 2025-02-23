@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Tangkapan skrin",
+        "message": "Coretan Visual: tangkapan skrin, Annotate & Share",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Tangkapan tangkapan halaman penangkapan dan anotat dengan satu klik",
+        "message": "Tangkap, tangkapan skrin Annotate laman web dan kongsi dengan satu klik",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Bagaimana kita dapat memperbaiki?"
-    },
-    "Options": {
-        "message": "Pilihan"
-    },
-    "Show_Demo": {
-        "message": "Tunjukkan demo"
-    },
-    "Report_an_Issue": {
-        "message": "Melaporkan isu"
     },
     "Welcome": {
         "message": "Selamat datang"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Nilai di kedai web Chrome"
+    },
+    "Options": {
+        "message": "Pilihan"
+    },
+    "Show_Demo": {
+        "message": "Tunjukkan demo"
+    },
+    "Report_an_Issue": {
+        "message": "Melaporkan isu"
     },
     "How_are_we_doing_": {
         "message": "Bagaimana keadaan kita?"

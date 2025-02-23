@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "스크린 샷",
+        "message": "비주얼 스 니펫 : 스크린 샷, 주석 및 공유",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "한 번의 클릭으로 웹 페이지의 스크린 샷을 캡처하고 주석을 달 수 있습니다",
+        "message": "웹 페이지의 스크린 샷을 캡처하고 주석을 달고 한 번의 클릭으로 공유하십시오.",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "우리는 어떻게 개선 할 수 있습니까?"
-    },
-    "Options": {
-        "message": "옵션"
-    },
-    "Show_Demo": {
-        "message": "데모를 보여주십시오"
-    },
-    "Report_an_Issue": {
-        "message": "문제를보고하십시오"
     },
     "Welcome": {
         "message": "환영"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Chrome Web Store의 속도"
+    },
+    "Options": {
+        "message": "옵션"
+    },
+    "Show_Demo": {
+        "message": "데모를 보여주십시오"
+    },
+    "Report_an_Issue": {
+        "message": "문제를보고하십시오"
     },
     "How_are_we_doing_": {
         "message": "우리는 어떻게 지내고 있습니까?"

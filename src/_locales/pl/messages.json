@@ -1,6 +1,6 @@
 {
     "@appName": {
-        "message": "Zrzut ekranu",
+        "message": "Fragmenty wizualne: zrzut ekranu, adnotacja i udostępnienie",
         "description": "The name of the extension"
     },
     "@appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "@appDesc": {
-        "message": "Krytyj i adnotuj zrzuty ekranu stron internetowymi za pomocą jednego kliknięcia",
+        "message": "Przechwytywać, zrzucić zrzuty ekranu stron internetowych i udostępnij jednym kliknięciem",
         "description": "The description of your extension"
     },
     "@testMarkup": {
@@ -37,15 +37,6 @@
     },
     "How_can_we_improve_": {
         "message": "Jak możemy poprawić?"
-    },
-    "Options": {
-        "message": "Opcje"
-    },
-    "Show_Demo": {
-        "message": "Pokazuj demo"
-    },
-    "Report_an_Issue": {
-        "message": "Zgłosić problem"
     },
     "Welcome": {
         "message": "Powitanie"
@@ -97,6 +88,15 @@
     },
     "Rate_on_Chrome_Web_Store": {
         "message": "Oceń w Chrome Web Store"
+    },
+    "Options": {
+        "message": "Opcje"
+    },
+    "Show_Demo": {
+        "message": "Pokazuj demo"
+    },
+    "Report_an_Issue": {
+        "message": "Zgłosić problem"
     },
     "How_are_we_doing_": {
         "message": "Jak się mamy?"
