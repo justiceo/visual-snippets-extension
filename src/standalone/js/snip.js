@@ -57,7 +57,14 @@ const getFileKey = () => {
   return url.searchParams.get("key");
 };
 
+const getErrorKey = () => {
+  const currentUrl = window.location.href;
+  const url = new URL(currentUrl);
+  return url.searchParams.get("error");
+};
+
 const fileKey = getFileKey();
+const errorKey = getErrorKey();
 console.debug("getFileKey", fileKey);
 if (fileKey) {
   chrome.storage.local.get(fileKey, (result) => {
@@ -71,6 +78,28 @@ if (fileKey) {
       setupCropper("img/no-image.jpg", fileKey);
     }
   });
+} else if (errorKey) {
+  const errorContainer = document.getElementById("error-container");
+  const errorMessage = document.getElementById("error-message");
+  const grantAccessBtn = document.getElementById("grant-access-btn");
+
+  if (errorKey === "noFileAccess") {
+    errorMessage.innerHTML =
+      "You tried to snip a local file.<br/> Visual Snippets needs your permission to access local files.";
+    grantAccessBtn.style.display = "inline-block";
+    grantAccessBtn.addEventListener("click", () => {
+      chrome.tabs.create({
+        url: "chrome://extensions/?id=" + chrome.runtime.id,
+      });
+    });
+
+    document.getElementById("grant-access-img").style.display = "block";
+  } else if (errorKey === "storageQuotaExceeded") {
+    errorMessage.textContent =
+      "Storage limit exceeded. Please free up space and try again.";
+  }
+
+  errorContainer.style.display = "block";
 } else {
   console.error("File key not found in URL");
   setupCropper("img/no-image.jpg", null);

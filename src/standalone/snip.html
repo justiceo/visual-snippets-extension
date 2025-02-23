@@ -7,23 +7,33 @@
 </head>
 
 <body>
+    <div id="error-container"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; padding: 20px; background: #ffcccb; text-align: center;">
+        <p id="error-message">An error occurred.</p>
+        <img id="grant-access-img" src="img/file-url-access.png" alt="File URL Access"
+            style="margin: 0 auto; max-width: 600px; margin-bottom: 30px; display: none">
+        <button id="grant-access-btn"
+            style="display: none; padding: 10px; background: #007bff; color: white; border: none; cursor: pointer;">
+            Grant File Access
+        </button>
+    </div>
+
     <div id="cropper-container">
         <img id="image" alt="image">
     </div>
+
     <style>
-        /* Make sure the size of the image fits perfectly into the container */
         img {
             display: block;
-
-            /* This rule is very important, please don't ignore this */
             max-width: 100%;
         }
 
         body {
             margin: 0;
-            background: gray
+            background: gray;
         }
     </style>
+
     <link rel="stylesheet" href="cropper-v1.6.2.min.css">
     <script type="text/javascript" src="js/cropper-v1.6.2.min.js"></script>
     <script type="text/javascript" src="js/snip.js"></script>
