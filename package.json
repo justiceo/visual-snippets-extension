@@ -2,7 +2,7 @@
   "name": "screenshot",
   "version": "1.0.0",
   "description": "Capture and annotate screenshots of webpages with one click",
-  "homepage": "https://xtensions.net/screenshot",
+  "homepage": "https://chromewebstore.google.com/detail/mefklboehjlfbfaogiganmkaliidbbbn",
   "scripts": {
     "build": "node tools/esbuild.js --task=build",
     "test": "node tools/esbuild.js --task=test",

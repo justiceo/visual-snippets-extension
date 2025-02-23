@@ -3,7 +3,7 @@
   "description": "__MSG_@appDesc__",
   "short_name": "__MSG_@appShortName__",
   "__comment:homepage_url": "This should be the webstore link, __MSG_@@extension_id__ is not allowed",
-  "homepage_url": "https://xtensions.net/screenshot",
+  "homepage_url": "https://chromewebstore.google.com/detail/mefklboehjlfbfaogiganmkaliidbbbn",
   "__comment:version__": "Firefox does not support leading zeros in versions",
   "version": "24.2.9",
   "manifest_version": 3,
