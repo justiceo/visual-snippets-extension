@@ -138,7 +138,7 @@ function setupEditor(imgData) {
     annotationsCommon: {
       fill: "#00000000", // or should be no color? === undefined
       stroke: "#FF0000", // or should be no color? === undefined
-      strokeWidth: 2,
+      strokeWidth: 4,
       shadowOffsetX: 0,
       shadowOffsetY: 0,
       shadowBlur: 0,
@@ -158,12 +158,12 @@ function setupEditor(imgData) {
     },
     Crop: {
       ratio: "custom",
-      autoResize: true,
+      autoResize: false,
       noPresets: true,
     },
     tabsIds: [TABS.ANNOTATE, TABS.ADJUST, "Filters", "Finetune", "Resize"],
     defaultTabId: TABS.ANNOTATE,
-    defaultToolId: TOOLS.Crop,
+    defaultToolId: TOOLS.RECT,
   };
 
   // Assuming we have a div with id="editor_container"

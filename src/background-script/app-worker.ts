@@ -29,9 +29,8 @@ chrome.action.onClicked.addListener((tab) => {
     // Open the image editor with the saved screenshot
     chrome.tabs.create({
       url:
-        chrome.runtime.getURL("standalone/index.html") +
-        "?key=" +
-        screenshotKey,
+        chrome.runtime.getURL("standalone/snip.html") + "?key=" + screenshotKey,
+      index: tab.index,
     });
   });
 });

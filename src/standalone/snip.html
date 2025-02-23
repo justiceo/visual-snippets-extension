@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Visual Snippet: Grab A Snip!</title>
+</head>
+
+<body>
+    <div id="cropper-container">
+        <img id="image" alt="image">
+    </div>
+    <style>
+        /* Make sure the size of the image fits perfectly into the container */
+        img {
+            display: block;
+
+            /* This rule is very important, please don't ignore this */
+            max-width: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: gray
+        }
+    </style>
+    <link rel="stylesheet" href="cropper-v1.6.2.min.css">
+    <script type="text/javascript" src="js/cropper-v1.6.2.min.js"></script>
+    <script type="text/javascript" src="js/snip.js"></script>
+</body>
+
+</html>
