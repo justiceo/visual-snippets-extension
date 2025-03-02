@@ -1,116 +1,116 @@
 {
-    "@appName": {
-        "message": "ภาพตัวอย่างภาพ: ภาพหน้าจอ, คำอธิบายประกอบและแบ่งปัน",
-        "description": "The name of the extension"
-    },
-    "@appShortName": {
-        "message": "ภาพหน้าจอ",
-        "description": "The short-version name of the extension name"
-    },
-    "@appDesc": {
-        "message": "จับภาพหน้าจอคำอธิบายประกอบของหน้าเว็บและแชร์ด้วยคลิกเดียว",
-        "description": "The description of your extension"
-    },
-    "@testMarkup": {
-        "message": "<div> <p> Hello World </p> นี่คือ <strong> ภาษา </strong> ของเว็บ </div>"
-    },
-    "Temporarily_disable_extension": {
-        "message": "ปิดการใช้งานการขยายชั่วคราว"
-    },
-    "Turns_off_the_extension_on_all_websites_": {
-        "message": "ปิดส่วนขยายในทุกเว็บไซต์"
-    },
-    "Disable_storage_sync": {
-        "message": "ปิดใช้งานการซิงค์การจัดเก็บข้อมูล"
-    },
-    "Your_settings_will_not_propagate_to_other_browsers_": {
-        "message": "การตั้งค่าของคุณจะไม่เผยแพร่ไปยังเบราว์เซอร์อื่น ๆ"
-    },
-    "Disabled_on_Websites": {
-        "message": "ปิดใช้งานบนเว็บไซต์"
-    },
-    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
-        "message": "ส่วนขยายจะไม่ทำงานบนเว็บไซต์เหล่านี้ ป้อนหนึ่งไซต์ต่อบรรทัด"
-    },
-    "Successfully_updated_settings": {
-        "message": "อัปเดตการตั้งค่าสำเร็จ"
-    },
-    "How_can_we_improve_": {
-        "message": "เราจะปรับปรุงได้อย่างไร?"
-    },
-    "Welcome": {
-        "message": "ยินดีต้อนรับ"
-    },
-    "Hooray____": {
-        "message": "ไชโย"
-    },
-    "If_you_are_looking_at_this_page__you_successfully": {
-        "message": "หากคุณกำลังดูหน้านี้คุณประสบความสำเร็จ"
-    },
-    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "โคลนที่เก็บที่\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n และติดตั้งการพึ่งพาทั้งหมด"
-    },
-    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "ใช้ Esbuild เพื่อสร้างซอร์สโค้ดและบรรจุลงในร้านค้าพร้อม\n รูปแบบ."
-    },
-    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "เปิดใช้งานโหมด dev บน Chrome/Firefox และติดตั้ง UNMUNDED\n ส่วนขยาย..."
-    },
-    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "หรือคุณสามารถเริ่มต้นอินสแตนซ์ของ Puppeteer กับไฟล์\n ติดตั้งส่วนขยาย"
-    },
-    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
-        "message": "ฉันบอกว่านั่นเป็นความคืบหน้าอย่างมากในการสร้างส่วนขยายเบราว์เซอร์"
-    },
-    "Next__Pin_it": {
-        "message": "ถัดไป: ปักมัน"
-    },
-    "_strong_1___strong__Click_on_the_extensions_icon_": {
-        "message": "<strong> 1. </strong> คลิกที่ไอคอนส่วนขยาย"
-    },
-    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> ค้นหา \"การเริ่มต้นเบราว์เซอร์\"\n ส่วนขยาย"
-    },
-    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> คลิกที่ไอคอนพินทางด้านขวาของสิ่งนี้\n ไอคอนของ Extension"
-    },
-    "All_done_": {
-        "message": "ทำทั้งหมด"
-    },
-    "Share_the_love_": {
-        "message": "แบ่งปันความรัก!"
-    },
-    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "หากคุณพบว่าส่วนขยายนี้มีประโยชน์ให้ทิ้งดาวไว้ในหน้า GitHub\n หรือให้คะแนนบน Chrome Webstore"
-    },
-    "Star_on_GitHub": {
-        "message": "ดาราบน GitHub"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "ให้คะแนนใน Chrome Web Store"
-    },
-    "Options": {
-        "message": "ตัวเลือก"
-    },
-    "Show_Demo": {
-        "message": "แสดงตัวอย่าง"
-    },
-    "Report_an_Issue": {
-        "message": "รายงานปัญหา"
-    },
-    "How_are_we_doing_": {
-        "message": "เราเป็นอย่างไรบ้าง?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "ดีใจที่คุณชอบ! คุณสามารถช่วยเราแบ่งปัน❤ได้หรือไม่?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "ขอบคุณสำหรับข้อเสนอแนะ!"
-    },
-    "No": {
-        "message": "เลขที่"
-    },
-    "Submit_Feedback": {
-        "message": "ส่งข้อเสนอแนะ"
-    }
+  "const_appName": {
+    "message": "ภาพตัวอย่างภาพ: ภาพหน้าจอ, คำอธิบายประกอบและแบ่งปัน",
+    "description": "The name of the extension"
+  },
+  "const_appShortName": {
+    "message": "ภาพหน้าจอ",
+    "description": "The short-version name of the extension name"
+  },
+  "const_appDesc": {
+    "message": "จับภาพหน้าจอคำอธิบายประกอบของหน้าเว็บและแชร์ด้วยคลิกเดียว",
+    "description": "The description of your extension"
+  },
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> นี่คือ <strong> ภาษา </strong> ของเว็บ </div>"
+  },
+  "Temporarily_disable_extension": {
+    "message": "ปิดการใช้งานการขยายชั่วคราว"
+  },
+  "Turns_off_the_extension_on_all_websites_": {
+    "message": "ปิดส่วนขยายในทุกเว็บไซต์"
+  },
+  "Disable_storage_sync": {
+    "message": "ปิดใช้งานการซิงค์การจัดเก็บข้อมูล"
+  },
+  "Your_settings_will_not_propagate_to_other_browsers_": {
+    "message": "การตั้งค่าของคุณจะไม่เผยแพร่ไปยังเบราว์เซอร์อื่น ๆ"
+  },
+  "Disabled_on_Websites": {
+    "message": "ปิดใช้งานบนเว็บไซต์"
+  },
+  "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+    "message": "ส่วนขยายจะไม่ทำงานบนเว็บไซต์เหล่านี้ ป้อนหนึ่งไซต์ต่อบรรทัด"
+  },
+  "Successfully_updated_settings": {
+    "message": "อัปเดตการตั้งค่าสำเร็จ"
+  },
+  "How_can_we_improve_": {
+    "message": "เราจะปรับปรุงได้อย่างไร?"
+  },
+  "Welcome": {
+    "message": "ยินดีต้อนรับ"
+  },
+  "Hooray____": {
+    "message": "ไชโย"
+  },
+  "If_you_are_looking_at_this_page__you_successfully": {
+    "message": "หากคุณกำลังดูหน้านี้คุณประสบความสำเร็จ"
+  },
+  "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+    "message": "โคลนที่เก็บที่\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n และติดตั้งการพึ่งพาทั้งหมด"
+  },
+  "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+    "message": "ใช้ Esbuild เพื่อสร้างซอร์สโค้ดและบรรจุลงในร้านค้าพร้อม\n รูปแบบ."
+  },
+  "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+    "message": "เปิดใช้งานโหมด dev บน Chrome/Firefox และติดตั้ง UNMUNDED\n ส่วนขยาย..."
+  },
+  "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+    "message": "หรือคุณสามารถเริ่มต้นอินสแตนซ์ของ Puppeteer กับไฟล์\n ติดตั้งส่วนขยาย"
+  },
+  "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+    "message": "ฉันบอกว่านั่นเป็นความคืบหน้าอย่างมากในการสร้างส่วนขยายเบราว์เซอร์"
+  },
+  "Next__Pin_it": {
+    "message": "ถัดไป: ปักมัน"
+  },
+  "_strong_1___strong__Click_on_the_extensions_icon_": {
+    "message": "<strong> 1. </strong> คลิกที่ไอคอนส่วนขยาย"
+  },
+  "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+    "message": "<strong> 2. </strong> ค้นหา \"การเริ่มต้นเบราว์เซอร์\"\n ส่วนขยาย"
+  },
+  "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+    "message": "<strong> 3. </strong> คลิกที่ไอคอนพินทางด้านขวาของสิ่งนี้\n ไอคอนของ Extension"
+  },
+  "All_done_": {
+    "message": "ทำทั้งหมด"
+  },
+  "Share_the_love_": {
+    "message": "แบ่งปันความรัก!"
+  },
+  "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+    "message": "หากคุณพบว่าส่วนขยายนี้มีประโยชน์ให้ทิ้งดาวไว้ในหน้า GitHub\n หรือให้คะแนนบน Chrome Webstore"
+  },
+  "Star_on_GitHub": {
+    "message": "ดาราบน GitHub"
+  },
+  "Rate_on_Chrome_Web_Store": {
+    "message": "ให้คะแนนใน Chrome Web Store"
+  },
+  "Options": {
+    "message": "ตัวเลือก"
+  },
+  "Show_Demo": {
+    "message": "แสดงตัวอย่าง"
+  },
+  "Report_an_Issue": {
+    "message": "รายงานปัญหา"
+  },
+  "How_are_we_doing_": {
+    "message": "เราเป็นอย่างไรบ้าง?"
+  },
+  "Glad_you_like_it__Can_you_help_us_share_the____": {
+    "message": "ดีใจที่คุณชอบ! คุณสามารถช่วยเราแบ่งปัน❤ได้หรือไม่?"
+  },
+  "Thanks_for_the_feedback_": {
+    "message": "ขอบคุณสำหรับข้อเสนอแนะ!"
+  },
+  "No": {
+    "message": "เลขที่"
+  },
+  "Submit_Feedback": {
+    "message": "ส่งข้อเสนอแนะ"
+  }
 }

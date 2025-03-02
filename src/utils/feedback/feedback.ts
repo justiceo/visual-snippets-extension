@@ -66,7 +66,7 @@ class FeedbackForm extends HTMLElement {
     shadow.append(style, documentFragment);
 
     const size = elem.getAttribute("size") ?? "inline";
-    const appName = elem.getAttribute("app-name") ?? i18n("@appName");
+    const appName = elem.getAttribute("app-name") ?? i18n("const_appName");
     const logo =
       elem.getAttribute("logo-url") ??
       chrome.runtime.getURL("assets/logo-24x24.png");
