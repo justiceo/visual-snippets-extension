@@ -1,5 +1,0 @@
-node_modules/*
-spec/out/*.js
-build/*dev*
-alternatives/*
-.DS_Store
